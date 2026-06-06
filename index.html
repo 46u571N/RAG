@@ -299,6 +299,58 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
 .mcard-gain::before{content:'↑ ';font-weight:700}
 @media(max-width:640px){.rag-compare,.mgrid{grid-template-columns:1fr}}
 
+
+/* COSENO SECTION */
+.cos-formula{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:1.5rem 2rem;margin-bottom:1.25rem;box-shadow:0 1px 3px rgba(0,0,0,0.05);display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap}
+.cos-frac{display:inline-flex;flex-direction:column;align-items:center;gap:0.15rem}
+.cos-num,.cos-den{font-family:var(--fm);font-size:0.95rem;color:var(--text)}
+.cos-line{width:100%;height:1.5px;background:var(--text)}
+.cos-eq{font-family:var(--fm);font-size:1rem;color:var(--text-m)}
+.cos-lhs{font-family:var(--fm);font-size:1rem;color:var(--text);font-weight:500}
+.cos-range{display:flex;gap:0;margin-bottom:2rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.cos-range-item{flex:1;padding:0.9rem 1rem;text-align:center;border-right:1px solid var(--border)}
+.cos-range-item:last-child{border-right:none}
+.cos-range-val{font-family:var(--fm);font-size:1.1rem;font-weight:700;margin-bottom:0.2rem}
+.cos-range-item:nth-child(1) .cos-range-val{color:var(--red)}
+.cos-range-item:nth-child(2) .cos-range-val{color:var(--text-d)}
+.cos-range-item:nth-child(3) .cos-range-val{color:var(--green)}
+.cos-range-label{font-size:0.74rem;color:var(--text-d);font-family:var(--fd)}
+.cos-tabs{display:flex;gap:0.4rem;margin-bottom:1.25rem;background:var(--surface-2);padding:0.3rem;border-radius:10px;width:fit-content}
+.cos-tab{padding:0.4rem 0.95rem;border-radius:7px;border:none;background:transparent;color:var(--text-d);font-family:var(--fd);font-size:0.8rem;font-weight:500;cursor:pointer;transition:all 0.2s}
+.cos-tab.on{background:var(--surface);box-shadow:0 1px 3px rgba(0,0,0,0.1);color:var(--text);font-weight:600}
+.cos-panel{display:none}.cos-panel.on{display:block}
+.vec-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.85rem;margin-bottom:1.25rem}
+.vec-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.vec-label{font-family:var(--fd);font-size:0.78rem;font-weight:700;color:var(--text-d);margin-bottom:0.5rem;text-transform:uppercase;letter-spacing:0.06em}
+.vec-vals{font-family:var(--fm);font-size:0.8rem;color:var(--teal);line-height:1.7;word-break:break-all}
+.cos-steps{display:flex;flex-direction:column;gap:0.65rem;margin-bottom:1.25rem}
+.cos-step{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.05);opacity:0.35;transition:opacity 0.3s}
+.cos-step.revealed{opacity:1}
+.cos-step-hdr{padding:0.8rem 1rem;display:flex;align-items:center;gap:0.75rem}
+.cos-step-n{width:26px;height:26px;border-radius:50%;background:var(--teal-d);border:1px solid var(--teal-m);display:flex;align-items:center;justify-content:center;font-family:var(--fm);font-size:0.72rem;color:var(--teal);flex-shrink:0}
+.cos-step.revealed .cos-step-n{background:var(--teal);color:#fff;border-color:var(--teal)}
+.cos-step-title{font-family:var(--fd);font-size:0.88rem;font-weight:600;color:var(--text);flex:1}
+.cos-step-result{font-family:var(--fm);font-size:0.88rem;font-weight:700;color:var(--teal)}
+.cos-step-body{padding:0 1rem 1rem;font-family:var(--fm);font-size:0.79rem;color:var(--text-m);line-height:1.75;display:none}
+.cos-step.revealed .cos-step-body{display:block}
+.cos-step-calc{margin-top:0.5rem;padding:0.6rem 0.85rem;background:var(--surface-2);border-radius:6px;font-size:0.78rem;color:var(--text)}
+.btn-step{display:inline-flex;align-items:center;gap:0.5rem;background:#111827;color:#fff;font-family:var(--fd);font-weight:600;font-size:0.82rem;padding:0.6rem 1.25rem;border-radius:100px;border:none;cursor:pointer;transition:all 0.2s;margin-top:0.5rem}
+.btn-step:hover{background:#1F2937}
+.btn-step:disabled{opacity:0.4;cursor:not-allowed}
+.cos-gauge{display:flex;align-items:center;gap:1.5rem;background:var(--teal-d);border:1px solid var(--teal-m);border-radius:var(--r);padding:1rem 1.25rem;margin-top:0.5rem;flex-wrap:wrap}
+.cos-gauge-svg{flex-shrink:0}
+.cos-gauge-info{}
+.cos-gauge-val{font-family:var(--fd);font-size:2rem;font-weight:800;color:var(--teal)}
+.cos-gauge-desc{font-size:0.82rem;color:var(--text-m);margin-top:0.2rem}
+.vocab-table{width:100%;border-collapse:collapse;margin-bottom:1.1rem;font-size:0.82rem}
+.vocab-table th{padding:0.55rem 0.75rem;text-align:left;font-family:var(--fd);font-size:0.7rem;font-weight:600;color:var(--text-d);text-transform:uppercase;letter-spacing:0.06em;border-bottom:2px solid var(--border);background:var(--surface-2)}
+.vocab-table td{padding:0.55rem 0.75rem;border-bottom:1px solid var(--border);font-family:var(--fm);color:var(--text-m)}
+.vocab-table td.match{color:var(--teal);font-weight:500}
+.vocab-table td.diff{color:var(--red)}
+.vocab-table tr:last-child td{border-bottom:none}
+.vocab-table .row-label{font-family:var(--fd);font-weight:600;color:var(--text);font-size:0.82rem}
+@media(max-width:640px){.vec-grid{grid-template-columns:1fr}.cos-range{flex-direction:column}}
+
 /* RESPONSIVE */
 @media(max-width:640px){
   .lflow{flex-direction:column}.larr{transform:rotate(90deg)}
@@ -325,6 +377,7 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
   <a class="nv" href="#prompt">Prompt</a>
   <a class="nv" href="#llm">El LLM</a>
   <a class="nv" href="#moderno">RAG Moderno</a>
+  <a class="nv" href="#coseno">Similitud Coseno</a>
 </nav>
 <div class="progress" id="prog"></div>
 
@@ -338,7 +391,7 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
   </h1>
   <p class="hsub">Una guía visual e interactiva que explica, paso a paso, cómo un sistema RAG conecta la búsqueda semántica con la generación de lenguaje natural.</p>
   <div class="hstats">
-    <div><div class="hstat-n">11</div><div class="hstat-l">secciones interactivas</div></div>
+    <div><div class="hstat-n">12</div><div class="hstat-l">secciones interactivas</div></div>
     <div><div class="hstat-n">5</div><div class="hstat-l">etapas del pipeline</div></div>
     <div><div class="hstat-n">4</div><div class="hstat-l">estrategias de chunking</div></div>
   </div>
@@ -808,6 +861,237 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
   </div>
 </section>
 
+<!-- COSENO -->
+<section class="s" id="coseno">
+  <div class="stag">§ 11 — Para los curiosos</div>
+  <h2>¿Cómo se calcula la <em>similitud coseno</em>?</h2>
+  <p class="lead">La métrica matemática detrás de toda búsqueda semántica. Mide el coseno del ángulo entre dos vectores — un número entre −1 y 1 que indica qué tan "cerca" están en significado, independientemente de su tamaño.</p>
+
+  <div class="cos-formula">
+    <span class="cos-lhs">similitud(A, B) =</span>
+    <div class="cos-frac">
+      <span class="cos-num">A · B</span>
+      <div class="cos-line"></div>
+      <span class="cos-den">‖A‖ × ‖B‖</span>
+    </div>
+    <span class="cos-eq">=</span>
+    <div class="cos-frac">
+      <span class="cos-num">producto escalar</span>
+      <div class="cos-line"></div>
+      <span class="cos-den">magnitud A × magnitud B</span>
+    </div>
+  </div>
+
+  <div class="cos-range">
+    <div class="cos-range-item">
+      <div class="cos-range-val">−1</div>
+      <div class="cos-range-label">Vectores opuestos</div>
+    </div>
+    <div class="cos-range-item">
+      <div class="cos-range-val">0</div>
+      <div class="cos-range-label">Sin relación</div>
+    </div>
+    <div class="cos-range-item">
+      <div class="cos-range-val">0.49</div>
+      <div class="cos-range-label">Relación moderada</div>
+    </div>
+    <div class="cos-range-item">
+      <div class="cos-range-val">0.67</div>
+      <div class="cos-range-label">Alta similitud</div>
+    </div>
+    <div class="cos-range-item">
+      <div class="cos-range-val">1</div>
+      <div class="cos-range-label">Vectores idénticos</div>
+    </div>
+  </div>
+
+  <div class="cos-tabs">
+    <button class="cos-tab on" data-ct="0">Con vectores numéricos</button>
+    <button class="cos-tab" data-ct="1">Con palabras reales</button>
+  </div>
+
+  <!-- PANEL 0: Numeric -->
+  <div class="cos-panel on" id="cpanel-0">
+    <div class="vec-grid">
+      <div class="vec-card">
+        <div class="vec-label">Vector A (10 dimensiones)</div>
+        <div class="vec-vals">(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)</div>
+      </div>
+      <div class="vec-card">
+        <div class="vec-label">Vector B (10 dimensiones)</div>
+        <div class="vec-vals">(2, 0, 1, 3, −1, 4, 0, 2, 5, −2)</div>
+      </div>
+    </div>
+
+    <div class="cos-steps" id="steps-num">
+      <div class="cos-step revealed" data-step="0">
+        <div class="cos-step-hdr">
+          <div class="cos-step-n">1</div>
+          <div class="cos-step-title">Producto escalar — A · B</div>
+          <div class="cos-step-result">= 77</div>
+        </div>
+        <div class="cos-step-body">
+          Multiplicamos cada par de componentes y sumamos todos los resultados:
+          <div class="cos-step-calc">
+            (1×2) + (2×0) + (3×1) + (4×3) + (5×−1) + (6×4) + (7×0) + (8×2) + (9×5) + (10×−2)<br>
+            = 2 + 0 + 3 + 12 − 5 + 24 + 0 + 16 + 45 − 20 = <strong>77</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="cos-step" data-step="1">
+        <div class="cos-step-hdr">
+          <div class="cos-step-n">2</div>
+          <div class="cos-step-title">Magnitud de A — ‖A‖</div>
+          <div class="cos-step-result">≈ 19.62</div>
+        </div>
+        <div class="cos-step-body">
+          Elevamos cada componente al cuadrado, sumamos y aplicamos raíz cuadrada:
+          <div class="cos-step-calc">
+            √(1² + 2² + 3² + 4² + 5² + 6² + 7² + 8² + 9² + 10²)<br>
+            = √(1 + 4 + 9 + 16 + 25 + 36 + 49 + 64 + 81 + 100)<br>
+            = √385 ≈ <strong>19.62</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="cos-step" data-step="2">
+        <div class="cos-step-hdr">
+          <div class="cos-step-n">3</div>
+          <div class="cos-step-title">Magnitud de B — ‖B‖</div>
+          <div class="cos-step-result">= 8</div>
+        </div>
+        <div class="cos-step-body">
+          Los negativos se vuelven positivos al elevar al cuadrado:
+          <div class="cos-step-calc">
+            √(2² + 0² + 1² + 3² + (−1)² + 4² + 0² + 2² + 5² + (−2)²)<br>
+            = √(4 + 0 + 1 + 9 + 1 + 16 + 0 + 4 + 25 + 4)<br>
+            = √64 = <strong>8</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="cos-step" data-step="3">
+        <div class="cos-step-hdr">
+          <div class="cos-step-n">4</div>
+          <div class="cos-step-title">Similitud coseno final</div>
+          <div class="cos-step-result">≈ 0.49</div>
+        </div>
+        <div class="cos-step-body">
+          Dividimos el producto escalar por el producto de las magnitudes:
+          <div class="cos-step-calc">
+            77 / (19.62 × 8) = 77 / 156.96 ≈ <strong>0.49</strong>
+          </div>
+          <div class="cos-gauge" style="margin-top:0.85rem">
+            <svg class="cos-gauge-svg" width="80" height="80" viewBox="0 0 80 80">
+              <circle cx="40" cy="40" r="30" fill="none" stroke="#E4E2DB" stroke-width="6"/>
+              <circle cx="40" cy="40" r="30" fill="none" stroke="#2563EB" stroke-width="6"
+                stroke-dasharray="94.25 188.5" stroke-dashoffset="47.12" stroke-linecap="round"
+                transform="rotate(-90 40 40)"/>
+              <text x="40" y="45" text-anchor="middle" font-family="DM Sans" font-size="13" font-weight="700" fill="#111827">0.49</text>
+            </svg>
+            <div class="cos-gauge-info">
+              <div class="cos-gauge-val">≈ 60° entre vectores</div>
+              <div class="cos-gauge-desc">Relación positiva moderada. Los vectores comparten dirección parcial pero no son similares. En texto: los documentos hablan de temas relacionados pero distintos.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn-step" id="btn-num" onclick="revealNext('num')">Siguiente paso →</button>
+  </div>
+
+  <!-- PANEL 1: Words -->
+  <div class="cos-panel" id="cpanel-1">
+    <p style="font-size:0.88rem;color:var(--text-m);margin-bottom:1.1rem;line-height:1.7">Comparamos dos frases. El vocabulario completo tiene 6 palabras — cada frase se convierte en un vector de 6 dimensiones donde cada número indica cuántas veces aparece esa palabra.</p>
+
+    <table class="vocab-table">
+      <thead>
+        <tr>
+          <th>Frase</th>
+          <th>el</th><th>perro</th><th>gato</th><th>corre</th><th>salta</th><th>duerme</th>
+          <th>Vector</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-label">"El perro corre"</td>
+          <td class="match">1</td><td class="match">1</td><td class="diff">0</td><td class="match">1</td><td>0</td><td>0</td>
+          <td style="font-family:var(--fm);font-size:0.75rem;color:var(--teal)">(1,1,0,1,0,0)</td>
+        </tr>
+        <tr>
+          <td class="row-label">"El gato corre"</td>
+          <td class="match">1</td><td class="diff">0</td><td class="match">1</td><td class="match">1</td><td>0</td><td>0</td>
+          <td style="font-family:var(--fm);font-size:0.75rem;color:var(--teal)">(1,0,1,1,0,0)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cos-steps" id="steps-words">
+      <div class="cos-step revealed" data-step="0">
+        <div class="cos-step-hdr">
+          <div class="cos-step-n">1</div>
+          <div class="cos-step-title">Producto escalar</div>
+          <div class="cos-step-result">= 2</div>
+        </div>
+        <div class="cos-step-body">
+          <div class="cos-step-calc">
+            (1×1) + (1×0) + (0×1) + (1×1) + (0×0) + (0×0)<br>
+            = 1 + 0 + 0 + 1 + 0 + 0 = <strong>2</strong>
+          </div>
+          Solo las dimensiones donde AMBAS frases tienen 1 contribuyen al producto.
+        </div>
+      </div>
+
+      <div class="cos-step" data-step="1">
+        <div class="cos-step-hdr">
+          <div class="cos-step-n">2</div>
+          <div class="cos-step-title">Magnitudes ‖A‖ y ‖B‖</div>
+          <div class="cos-step-result">= √3 ≈ 1.732</div>
+        </div>
+        <div class="cos-step-body">
+          Ambas frases tienen 3 palabras del vocabulario, entonces ambas magnitudes son iguales:
+          <div class="cos-step-calc">
+            ‖A‖ = √(1²+1²+0²+1²+0²+0²) = √3 ≈ <strong>1.732</strong><br>
+            ‖B‖ = √(1²+0²+1²+1²+0²+0²) = √3 ≈ <strong>1.732</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="cos-step" data-step="2">
+        <div class="cos-step-hdr">
+          <div class="cos-step-n">3</div>
+          <div class="cos-step-title">Similitud coseno final</div>
+          <div class="cos-step-result">≈ 0.67</div>
+        </div>
+        <div class="cos-step-body">
+          <div class="cos-step-calc">
+            2 / (1.732 × 1.732) = 2 / 3 ≈ <strong>0.67</strong>
+          </div>
+          <div class="cos-gauge" style="margin-top:0.85rem">
+            <svg class="cos-gauge-svg" width="80" height="80" viewBox="0 0 80 80">
+              <circle cx="40" cy="40" r="30" fill="none" stroke="#E4E2DB" stroke-width="6"/>
+              <circle cx="40" cy="40" r="30" fill="none" stroke="#2563EB" stroke-width="6"
+                stroke-dasharray="125.66 188.5" stroke-dashoffset="47.12" stroke-linecap="round"
+                transform="rotate(-90 40 40)"/>
+              <text x="40" y="45" text-anchor="middle" font-family="DM Sans" font-size="13" font-weight="700" fill="#111827">0.67</text>
+            </svg>
+            <div class="cos-gauge-info">
+              <div class="cos-gauge-val">Alta similitud — 67%</div>
+              <div class="cos-gauge-desc">Las frases comparten estructura y acción, difieren solo en un elemento. En un sistema RAG real, este chunk sería recuperado para preguntas sobre cualquiera de los dos animales.</div>
+            </div>
+          </div>
+          <div style="margin-top:0.9rem;padding:0.85rem 1rem;background:var(--surface-2);border-radius:8px;font-size:0.82rem;color:var(--text-m);line-height:1.65">
+            <strong style="color:var(--text)">¿Por qué RAG usa embeddings y no conteo de palabras?</strong><br>
+            Con conteo de palabras, "perro" y "can" tendrían similitud 0 aunque signifiquen lo mismo. Los embeddings codifican el <em>significado</em> en lugar de las palabras literales — por eso detectan sinónimos, contexto y conceptos relacionados.
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn-step" id="btn-words" onclick="revealNext('words')">Siguiente paso →</button>
+  </div>
+</section>
+
 <!-- RAG MODERNO -->
 <section class="s" id="moderno">
   <div class="stag">§ 10 — Arquitectura 2026</div>
@@ -1241,6 +1525,35 @@ document.querySelectorAll('.pblock').forEach(block => {
   });
 });
 
+
+
+// ---- COSENO TABS ----
+document.querySelectorAll('.cos-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.cos-tab').forEach(t => t.classList.remove('on'));
+    document.querySelectorAll('.cos-panel').forEach(p => p.classList.remove('on'));
+    tab.classList.add('on');
+    document.getElementById('cpanel-' + tab.dataset.ct).classList.add('on');
+  });
+});
+
+// ---- COSENO STEP REVEAL ----
+const stepState = { num: 0, words: 0 };
+const stepMax = { num: 3, words: 2 };
+
+function revealNext(group) {
+  const steps = document.querySelectorAll('#steps-' + group + ' .cos-step');
+  const next = stepState[group] + 1;
+  if (next < steps.length) {
+    steps[next].classList.add('revealed');
+    stepState[group] = next;
+  }
+  const btn = document.getElementById('btn-' + group);
+  if (stepState[group] >= stepMax[group]) {
+    btn.textContent = '✓ Completado';
+    btn.disabled = true;
+  }
+}
 
 // ---- RAG MODERNO CARDS ----
 document.querySelectorAll('.mcard').forEach(card => {
