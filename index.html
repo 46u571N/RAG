@@ -24,7 +24,6 @@
 html{scroll-behavior:smooth}
 body{font-family:var(--fb);background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 
-/* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,244,239,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(228,226,219,0.7);padding:0 1.5rem;height:52px;display:flex;align-items:center;gap:0.2rem;overflow-x:auto;scrollbar-width:none}
 .nav::-webkit-scrollbar{display:none}
 .nav-logo{font-family:var(--fd);font-weight:800;font-size:0.95rem;color:var(--text);margin-right:1.25rem;flex-shrink:0;letter-spacing:-0.01em}
@@ -33,14 +32,12 @@ a.nv:hover{color:var(--text-m);border-color:var(--border)}
 a.nv.active{color:var(--teal);border-color:var(--teal-m);background:var(--teal-d)}
 .progress{position:fixed;top:52px;left:0;height:2px;background:var(--teal);transition:width 0.1s;z-index:100;width:0%}
 
-/* LAYOUT */
 .s{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:8rem 2rem 6rem;max-width:960px;margin:0 auto}
 .stag{font-family:var(--fd);font-size:0.72rem;font-weight:600;color:var(--text-d);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.7rem}
 h2{font-family:var(--fd);font-size:clamp(1.9rem,4vw,2.9rem);font-weight:800;line-height:1.1;margin-bottom:0.65rem;letter-spacing:-0.025em}
 h2 em{color:var(--teal);font-style:normal}
 .lead{font-size:1rem;line-height:1.75;color:var(--text-m);max-width:660px;margin-bottom:2.25rem}
 
-/* HERO */
 #intro{padding-top:9rem}
 .hbadge{display:inline-flex;align-items:center;gap:0.5rem;background:var(--surface);border:1px solid var(--border);color:var(--text-m);font-family:var(--fd);font-size:0.75rem;font-weight:500;padding:0.4rem 0.9rem;border-radius:100px;margin-bottom:1.25rem;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
 .hbadge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite;flex-shrink:0}
@@ -54,10 +51,8 @@ h2 em{color:var(--teal);font-style:normal}
 .btngo{display:inline-flex;align-items:center;gap:0.55rem;background:var(--teal);color:#ffffff;font-family:var(--fd);font-weight:700;font-size:0.88rem;padding:0.75rem 1.5rem;border-radius:8px;text-decoration:none;transition:all 0.2s;letter-spacing:0.02em}
 .btngo:hover{background:#1a8aa8;transform:translateY(-1px);box-shadow:0 8px 20px rgba(33,158,188,0.3)}
 
-/* CARDS BASE */
 .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,0.05),0 1px 2px rgba(0,0,0,0.04)}
 
-/* PROBLEMA */
 .pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0.9rem}
 .pcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:1.75rem;position:relative;overflow:hidden;transition:all 0.2s;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
 .pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
@@ -70,7 +65,6 @@ h2 em{color:var(--teal);font-style:normal}
 .psol{margin-top:0.9rem;padding-top:0.9rem;border-top:1px solid var(--border);font-size:0.78rem;color:var(--teal);font-family:var(--fm)}
 .psol::before{content:'✓ '}
 
-/* PIPELINE */
 .pline{display:flex;flex-direction:column}
 .pstep{display:flex;gap:1.1rem;align-items:flex-start;cursor:pointer}
 .spine{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:42px}
@@ -91,7 +85,6 @@ h2 em{color:var(--teal);font-style:normal}
 .sdeti p{font-size:0.87rem;color:var(--text-m);line-height:1.68}
 .sdeti .mono{font-family:var(--fm);font-size:0.76rem;color:var(--teal);margin-top:0.65rem;padding:0.5rem 0.8rem;background:rgba(37,99,235,0.06);border-left:2px solid var(--teal);border-radius:0 4px 4px 0}
 
-/* EMBEDDINGS */
 .ewrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
 .ectrl{padding:0.9rem 1.1rem;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center}
 .ectrl-label{font-family:var(--fm);font-size:0.68rem;color:var(--text-d);margin-right:0.3rem;text-transform:uppercase;letter-spacing:0.08em}
@@ -103,7 +96,6 @@ h2 em{color:var(--teal);font-style:normal}
 .einfo .hl{color:var(--teal);font-weight:500}
 .einfo .hr{color:var(--red);font-weight:500}
 
-/* INDEX PHASE */
 .iflow{display:flex;align-items:stretch;gap:0.65rem;margin-bottom:1.25rem;flex-wrap:wrap}
 .inode{background:var(--surface);border:1px solid var(--teal-m);border-radius:var(--r);padding:0.85rem 1rem;flex:1;min-width:130px;text-align:center}
 .inode-t{font-family:var(--fd);font-size:0.82rem;font-weight:700;color:var(--teal);margin-bottom:0.2rem}
@@ -118,7 +110,6 @@ h2 em{color:var(--teal);font-style:normal}
 .ctxt{flex:1;font-size:0.8rem;color:var(--text-m)}
 .cvec{font-family:var(--fm);font-size:0.68rem;color:var(--teal);background:var(--teal-d);padding:0.18rem 0.55rem;border-radius:4px;flex-shrink:0}
 
-/* RETRIEVAL */
 .qbtns{display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:1.25rem}
 .qbtn{padding:0.45rem 0.95rem;border-radius:100px;border:1px solid var(--border);background:var(--surface);color:var(--text-m);font-family:var(--fd);font-size:0.8rem;font-weight:500;cursor:pointer;transition:all 0.2s;box-shadow:0 1px 2px rgba(0,0,0,0.04)}
 .qbtn:hover{border-color:var(--teal);color:var(--text)}
@@ -146,7 +137,6 @@ h2 em{color:var(--teal);font-style:normal}
 .topitem{font-size:0.79rem;color:var(--text-m);padding:0.18rem 0;font-family:var(--fm)}
 .topitem span{color:var(--teal);font-weight:500}
 
-/* CHUNKING */
 .ctabs{display:flex;gap:0.4rem;margin-bottom:1.25rem;flex-wrap:wrap;background:var(--surface-2);padding:0.3rem;border-radius:10px;width:fit-content}
 .ctab{padding:0.4rem 0.85rem;border-radius:7px;border:none;background:transparent;color:var(--text-d);font-family:var(--fd);font-size:0.8rem;font-weight:500;cursor:pointer;transition:all 0.2s}
 .ctab:hover{color:var(--text-m)}
@@ -172,7 +162,6 @@ h2 em{color:var(--teal);font-style:normal}
 .cpr,.ccn{font-size:0.77rem;color:var(--text-m);padding:0.15rem 0}
 .cpr::before{content:'+ ';color:var(--green)}.ccn::before{content:'− ';color:var(--red)}
 
-/* METADATOS */
 .mrec{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
 .mrec-hdr{padding:0.8rem 1.1rem;background:var(--surface-2);border-bottom:1px solid var(--border);font-family:var(--fm);font-size:0.75rem;color:var(--text-d)}
 .mgrp{border-bottom:1px solid var(--border)}
@@ -192,7 +181,6 @@ h2 em{color:var(--teal);font-style:normal}
 .mval{font-family:var(--fm);font-size:0.76rem;color:var(--teal);word-break:break-all}
 .mdesc{font-size:0.72rem;color:var(--text-d)}
 
-/* PROMPT */
 .pblocks{display:flex;flex-direction:column;gap:0.65rem;margin-bottom:1.1rem}
 .pblock{border-radius:var(--r);border:1px solid var(--border);overflow:hidden;transition:opacity 0.25s}
 .pblock.off{opacity:0.32}
@@ -222,10 +210,8 @@ h2 em{color:var(--teal);font-style:normal}
 .tokvis{flex:1;height:7px;background:var(--surface-2);border-radius:4px;overflow:hidden}
 .tokfill{height:100%;background:var(--teal);border-radius:4px;transition:width 0.4s}
 
-/* LLM */
 .ltabs{display:flex;gap:0.35rem;margin-bottom:1.25rem;width:fit-content;background:var(--surface-2);padding:0.3rem;border-radius:10px}
 .ltab{padding:0.4rem 0.95rem;border:none;background:transparent;color:var(--text-d);font-family:var(--fd);font-size:0.8rem;font-weight:500;cursor:pointer;transition:all 0.2s;border-radius:7px}
-.ltab-spacer{display:none}
 .ltab:hover{color:var(--text-m)}
 .ltab.on{background:var(--surface);box-shadow:0 1px 3px rgba(0,0,0,0.1);color:var(--text);font-weight:600}
 .lpanel{display:none}.lpanel.on{display:block}
@@ -258,11 +244,8 @@ h2 em{color:var(--teal);font-style:normal}
 .fsol{font-size:0.73rem;color:var(--teal);font-family:var(--fm)}
 .fsol::before{content:'→ '}
 
-/* FOOTER */
 footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);color:var(--text-d);font-family:var(--fd);font-size:0.8rem}
 
-
-/* RAG MODERNO */
 .rag-compare{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem}
 .rag-col{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden}
 .rag-col-t{padding:0.75rem 1.1rem;font-family:var(--fd);font-size:0.82rem;font-weight:700;border-bottom:1px solid var(--border)}
@@ -299,8 +282,6 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
 .mcard-gain::before{content:'↑ ';font-weight:700}
 @media(max-width:640px){.rag-compare,.mgrid{grid-template-columns:1fr}}
 
-
-/* COSENO SECTION */
 .cos-formula{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:1.5rem 2rem;margin-bottom:1.25rem;box-shadow:0 1px 3px rgba(0,0,0,0.05);display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap}
 .cos-frac{display:inline-flex;flex-direction:column;align-items:center;gap:0.15rem}
 .cos-num,.cos-den{font-family:var(--fm);font-size:0.95rem;color:var(--text)}
@@ -339,7 +320,6 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
 .btn-step:disabled{opacity:0.4;cursor:not-allowed}
 .cos-gauge{display:flex;align-items:center;gap:1.5rem;background:var(--teal-d);border:1px solid var(--teal-m);border-radius:var(--r);padding:1rem 1.25rem;margin-top:0.5rem;flex-wrap:wrap}
 .cos-gauge-svg{flex-shrink:0}
-.cos-gauge-info{}
 .cos-gauge-val{font-family:var(--fd);font-size:2rem;font-weight:800;color:var(--teal)}
 .cos-gauge-desc{font-size:0.82rem;color:var(--text-m);margin-top:0.2rem}
 .vocab-table{width:100%;border-collapse:collapse;margin-bottom:1.1rem;font-size:0.82rem}
@@ -351,7 +331,6 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
 .vocab-table .row-label{font-family:var(--fd);font-weight:600;color:var(--text);font-size:0.82rem}
 @media(max-width:640px){.vec-grid{grid-template-columns:1fr}.cos-range{flex-direction:column}}
 
-/* RESPONSIVE */
 @media(max-width:640px){
   .lflow{flex-direction:column}.larr{transform:rotate(90deg)}
   .cgrid,.fgrid{grid-template-columns:1fr}
@@ -360,6 +339,54 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
   .mrow .mdesc{display:none}
   .iflow{flex-direction:column}
 }
+
+/* ---- DECISION TREE §12 ---- */
+.dec-step { display: none; animation: decFade 0.3s; }
+.dec-step.active { display: block; }
+@keyframes decFade { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+.dec-breadcrumb { display:flex; gap:0.4rem; align-items:center; flex-wrap:wrap; font-family:var(--fm); font-size:0.7rem; color:var(--text-d); margin-bottom:1.25rem; }
+.dec-bc-item { color:var(--text-d); }
+.dec-bc-item.active { color:var(--teal); }
+.dec-bc-sep { color:var(--border-hi); }
+.dec-q { font-family:var(--fd); font-size:clamp(1.4rem,3vw,1.9rem); font-weight:800; line-height:1.15; margin-bottom:0.65rem; letter-spacing:-0.02em; }
+.dec-help { font-size:0.9rem; color:var(--text-m); max-width:620px; margin-bottom:1.75rem; line-height:1.65; }
+.dec-choices { display:flex; flex-direction:column; gap:0.75rem; max-width:680px; margin-bottom:1.25rem; }
+.dec-choice { background:var(--surface); border:1px solid var(--border); border-radius:var(--rl); padding:1.1rem 1.25rem; text-align:left; cursor:pointer; display:flex; align-items:center; gap:1rem; transition:all 0.18s; box-shadow:0 1px 3px rgba(0,0,0,0.05); }
+.dec-choice:hover { border-color:var(--teal); background:var(--teal-d); transform:translateX(3px); box-shadow:0 4px 14px rgba(37,99,235,0.1); }
+.dec-choice-icon { font-size:1.5rem; flex-shrink:0; }
+.dec-choice-body { flex:1; }
+.dec-choice-title { font-family:var(--fd); font-size:0.95rem; font-weight:700; color:var(--text); margin-bottom:0.2rem; }
+.dec-choice-sub { font-family:var(--fm); font-size:0.75rem; color:var(--text-d); }
+.dec-arr { color:var(--text-d); font-size:1.1rem; transition:transform 0.18s; flex-shrink:0; }
+.dec-choice:hover .dec-arr { transform:translateX(3px); color:var(--teal); }
+.dec-back, .dec-restart { background:none; border:1px solid var(--border); color:var(--text-d); padding:0.55rem 1rem; cursor:pointer; font-family:var(--fm); font-size:0.78rem; border-radius:100px; transition:all 0.2s; }
+.dec-back:hover, .dec-restart:hover { color:var(--text); border-color:var(--border-hi); }
+.dec-result { background:var(--surface); border:1px solid var(--border); border-radius:var(--rl); overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+.dec-result-badge { padding:0.7rem 1.25rem; font-family:var(--fm); font-size:0.75rem; font-weight:600; border-bottom:1px solid var(--border); }
+.dec-result-badge.local { background:var(--teal-d); color:var(--teal); }
+.dec-result-badge.api { background:var(--amber-d); color:var(--amber); }
+.dec-result-badge.sql { background:rgba(124,58,237,0.07); color:var(--purple); }
+.dec-result-title { padding:1.25rem 1.25rem 0; font-family:var(--fd); font-size:1.2rem; font-weight:800; color:var(--text); letter-spacing:-0.015em; }
+.dec-result-body { padding:0.9rem 1.25rem 1.25rem; }
+.dec-result-body p { font-size:0.87rem; color:var(--text-m); line-height:1.7; margin-bottom:0.85rem; }
+.dec-result-body strong { color:var(--text); }
+.dec-result-flow { display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; margin:1rem 0; padding:0.85rem 1rem; background:var(--surface-2); border-radius:var(--r); border:1px solid var(--border); }
+.dec-flow-node { padding:0.35rem 0.75rem; border-radius:6px; font-family:var(--fm); font-size:0.74rem; border:1px solid var(--border); background:var(--surface); color:var(--text-m); }
+.dec-flow-node.hi { background:var(--teal-d); border-color:var(--teal-m); color:var(--teal); }
+.dec-flow-node.ok { background:rgba(5,150,105,0.08); border-color:rgba(5,150,105,0.3); color:var(--green); }
+.dec-flow-node.warn { background:var(--amber-d); border-color:rgba(217,119,6,0.3); color:var(--amber); }
+.dec-flow-arr { color:var(--text-d); font-size:0.9rem; flex-shrink:0; }
+.dec-flow-label { font-family:var(--fm); font-size:0.7rem; color:var(--text-d); margin-top:0.9rem; letter-spacing:0.05em; text-transform:uppercase; }
+.dec-result-cases { display:grid; grid-template-columns:1fr 1fr; gap:0.65rem; margin-top:1rem; }
+@media(max-width:600px) { .dec-result-cases { grid-template-columns:1fr; } }
+.dec-case { background:var(--surface-2); border:1px solid var(--border); border-radius:var(--r); padding:0.85rem; }
+.dec-case.warn-case { border-color:rgba(217,119,6,0.3); background:var(--amber-d); }
+.dec-case-label { font-family:var(--fm); font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--teal); margin-bottom:0.4rem; }
+.dec-case.warn-case .dec-case-label { color:var(--amber); }
+.dec-case-text { font-size:0.8rem; color:var(--text-m); line-height:1.6; }
+.dec-result-meta { display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.1rem; padding-top:0.9rem; border-top:1px solid var(--border); font-family:var(--fm); font-size:0.72rem; color:var(--text-d); }
+.dec-result-meta .ok { color:var(--green); }
+.dec-result-meta .warn { color:var(--amber); }
 </style>
 </head>
 <body>
@@ -378,17 +405,13 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
   <a class="nv" href="#llm">El LLM</a>
   <a class="nv" href="#moderno">RAG Moderno</a>
   <a class="nv" href="#coseno">Similitud Coseno</a>
+  <a class="nv" href="#decision">¿Cuándo embeber?</a>
 </nav>
 <div class="progress" id="prog"></div>
 
-<!-- HERO -->
 <section class="s" id="intro">
   <div class="hbadge">Guía Visual Interactiva</div>
-  <h1 class="htitle">
-    <span class="ac">RAG</span><br>
-    <span class="dm">Retrieval-Augmented</span><br>
-    Generation
-  </h1>
+  <h1 class="htitle"><span class="ac">RAG</span><br><span class="dm">Retrieval-Augmented</span><br>Generation</h1>
   <p class="hsub">Una guía visual e interactiva que explica, paso a paso, cómo un sistema RAG conecta la búsqueda semántica con la generación de lenguaje natural.</p>
   <div class="hstats">
     <div><div class="hstat-n">12</div><div class="hstat-l">secciones interactivas</div></div>
@@ -398,129 +421,30 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
   <a class="btngo" href="#problema">Comenzar →</a>
 </section>
 
-<!-- PROBLEMA -->
 <section class="s" id="problema">
   <div class="stag">§ 01 — Motivación</div>
   <h2>¿Por qué necesitamos <em>RAG</em>?</h2>
   <p class="lead">Los LLMs son poderosos, pero tienen tres limitaciones críticas que RAG ataca directamente.</p>
   <div class="pgrid">
-    <div class="pcard rc">
-      <div class="picon">📅</div>
-      <div class="ptitle">Límite de conocimiento</div>
-      <p class="ptext">Todo modelo tiene una fecha de corte de entrenamiento. Información posterior —o datos privados— le resulta completamente invisible.</p>
-      <div class="psol">RAG conecta el modelo a una base actualizable en tiempo real, sin reentrenar nada.</div>
-    </div>
-    <div class="pcard ac">
-      <div class="picon">💭</div>
-      <div class="ptitle">Alucinaciones</div>
-      <p class="ptext">Cuando un LLM no sabe algo, a veces lo inventa con total confianza. En contextos clínicos, legales o corporativos esto es inaceptable.</p>
-      <div class="psol">RAG reduce las alucinaciones: el modelo genera solo a partir de documentos reales, con fuente citable.</div>
-    </div>
-    <div class="pcard bc">
-      <div class="picon">💸</div>
-      <div class="ptitle">Costo del reentrenamiento</div>
-      <p class="ptext">Reentrenar un modelo grande cuesta millones de dólares y semanas de cómputo. Actualizar políticas semanalmente es inviable.</p>
-      <div class="psol">Actualizar una base vectorial cuesta centavos y segundos. El modelo no se toca.</div>
-    </div>
+    <div class="pcard rc"><div class="picon">📅</div><div class="ptitle">Límite de conocimiento</div><p class="ptext">Todo modelo tiene una fecha de corte de entrenamiento. Información posterior —o datos privados— le resulta completamente invisible.</p><div class="psol">RAG conecta el modelo a una base actualizable en tiempo real, sin reentrenar nada.</div></div>
+    <div class="pcard ac"><div class="picon">💭</div><div class="ptitle">Alucinaciones</div><p class="ptext">Cuando un LLM no sabe algo, a veces lo inventa con total confianza. En contextos clínicos, legales o corporativos esto es inaceptable.</p><div class="psol">RAG reduce las alucinaciones: el modelo genera solo a partir de documentos reales, con fuente citable.</div></div>
+    <div class="pcard bc"><div class="picon">💸</div><div class="ptitle">Costo del reentrenamiento</div><p class="ptext">Reentrenar un modelo grande cuesta millones de dólares y semanas de cómputo. Actualizar políticas semanalmente es inviable.</p><div class="psol">Actualizar una base vectorial cuesta centavos y segundos. El modelo no se toca.</div></div>
   </div>
 </section>
 
-<!-- PIPELINE -->
 <section class="s" id="pipeline">
   <div class="stag">§ 02 — Arquitectura</div>
   <h2>El pipeline RAG en <em>5 etapas</em></h2>
   <p class="lead">Hacé clic en cada paso para expandir los detalles del flujo.</p>
   <div class="pline" id="pipelineEl">
-
-    <div class="pstep" data-i="0">
-      <div class="spine"><div class="snum">①</div><div class="sline"></div></div>
-      <div class="scont">
-        <div class="shdr">
-          <div>
-            <div class="stit">Pregunta del usuario</div>
-            <div class="ssub">Consulta en lenguaje natural</div>
-          </div>
-          <span class="schev">›</span>
-        </div>
-        <div class="sdet"><div class="sdeti">
-          <p>El sistema recibe la consulta tal como la escribe el usuario. No requiere sintaxis especial ni palabras clave exactas — el lenguaje natural es suficiente.</p>
-          <div class="mono">ej: "¿Cuántos días de vacaciones tengo con 6 años en la empresa?"</div>
-        </div></div>
-      </div>
-    </div>
-
-    <div class="pstep" data-i="1">
-      <div class="spine"><div class="snum">②</div><div class="sline"></div></div>
-      <div class="scont">
-        <div class="shdr">
-          <div>
-            <div class="stit">Vectorización</div>
-            <div class="ssub">Texto → embedding numérico</div>
-          </div>
-          <span class="schev">›</span>
-        </div>
-        <div class="sdet"><div class="sdeti">
-          <p>La pregunta se pasa por un modelo de embeddings (como BGE-M3 o text-embedding-3) que la transforma en un vector de alta dimensión. Ese vector captura el <em>significado semántico</em>, no solo las palabras literales.</p>
-          <div class="mono">pregunta → [0.3, 0.8, -0.14, 0.67, ... ×1536 dims]</div>
-        </div></div>
-      </div>
-    </div>
-
-    <div class="pstep" data-i="2">
-      <div class="spine"><div class="snum">③</div><div class="sline"></div></div>
-      <div class="scont">
-        <div class="shdr">
-          <div>
-            <div class="stit">Recuperación</div>
-            <div class="ssub">Top-K fragmentos por similitud coseno</div>
-          </div>
-          <span class="schev">›</span>
-        </div>
-        <div class="sdet"><div class="sdeti">
-          <p>El vector de la pregunta se compara contra todos los embeddings pre-calculados de los documentos en la base vectorial. Se devuelven los K fragmentos más cercanos geométricamente — los más similares en significado.</p>
-          <div class="mono">similitud_coseno(q_vec, chunk_vec) → ordenados desc → top-3</div>
-        </div></div>
-      </div>
-    </div>
-
-    <div class="pstep" data-i="3">
-      <div class="spine"><div class="snum">④</div><div class="sline"></div></div>
-      <div class="scont">
-        <div class="shdr">
-          <div>
-            <div class="stit">Aumentación del contexto</div>
-            <div class="ssub">Pregunta + fragmentos → prompt enriquecido</div>
-          </div>
-          <span class="schev">›</span>
-        </div>
-        <div class="sdet"><div class="sdeti">
-          <p>Los fragmentos recuperados se insertan junto a la pregunta original en un prompt estructurado. El LLM recibe instrucciones, contexto con fuentes y la consulta del usuario — todo junto.</p>
-          <div class="mono">[sistema] + [chunks con scores] + [pregunta] + [guardrail]</div>
-        </div></div>
-      </div>
-    </div>
-
-    <div class="pstep" data-i="4">
-      <div class="spine"><div class="snum">⑤</div></div>
-      <div class="scont">
-        <div class="shdr">
-          <div>
-            <div class="stit">Generación con LLM</div>
-            <div class="ssub">Respuesta fundamentada y citable</div>
-          </div>
-          <span class="schev">›</span>
-        </div>
-        <div class="sdet"><div class="sdeti">
-          <p>El LLM genera la respuesta condicionado por el contexto provisto — no por su memoria de entrenamiento. Puede citar fuentes, admitir incertidumbre, y producir texto coherente y natural.</p>
-          <div class="mono">output: respuesta + fuente_doc + página + similitud</div>
-        </div></div>
-      </div>
-    </div>
-
+    <div class="pstep" data-i="0"><div class="spine"><div class="snum">①</div><div class="sline"></div></div><div class="scont"><div class="shdr"><div><div class="stit">Pregunta del usuario</div><div class="ssub">Consulta en lenguaje natural</div></div><span class="schev">›</span></div><div class="sdet"><div class="sdeti"><p>El sistema recibe la consulta tal como la escribe el usuario. No requiere sintaxis especial ni palabras clave exactas — el lenguaje natural es suficiente.</p><div class="mono">ej: "¿Cuántos días de vacaciones tengo con 6 años en la empresa?"</div></div></div></div></div>
+    <div class="pstep" data-i="1"><div class="spine"><div class="snum">②</div><div class="sline"></div></div><div class="scont"><div class="shdr"><div><div class="stit">Vectorización</div><div class="ssub">Texto → embedding numérico</div></div><span class="schev">›</span></div><div class="sdet"><div class="sdeti"><p>La pregunta se pasa por un modelo de embeddings que la transforma en un vector de alta dimensión. Ese vector captura el <em>significado semántico</em>, no solo las palabras literales.</p><div class="mono">pregunta → [0.3, 0.8, -0.14, 0.67, ... ×1536 dims]</div></div></div></div></div>
+    <div class="pstep" data-i="2"><div class="spine"><div class="snum">③</div><div class="sline"></div></div><div class="scont"><div class="shdr"><div><div class="stit">Recuperación</div><div class="ssub">Top-K fragmentos por similitud coseno</div></div><span class="schev">›</span></div><div class="sdet"><div class="sdeti"><p>El vector de la pregunta se compara contra todos los embeddings pre-calculados de los documentos en la base vectorial. Se devuelven los K fragmentos más cercanos geométricamente.</p><div class="mono">similitud_coseno(q_vec, chunk_vec) → ordenados desc → top-3</div></div></div></div></div>
+    <div class="pstep" data-i="3"><div class="spine"><div class="snum">④</div><div class="sline"></div></div><div class="scont"><div class="shdr"><div><div class="stit">Aumentación del contexto</div><div class="ssub">Pregunta + fragmentos → prompt enriquecido</div></div><span class="schev">›</span></div><div class="sdet"><div class="sdeti"><p>Los fragmentos recuperados se insertan junto a la pregunta original en un prompt estructurado. El LLM recibe instrucciones, contexto con fuentes y la consulta del usuario.</p><div class="mono">[sistema] + [chunks con scores] + [pregunta] + [guardrail]</div></div></div></div></div>
+    <div class="pstep" data-i="4"><div class="spine"><div class="snum">⑤</div></div><div class="scont"><div class="shdr"><div><div class="stit">Generación con LLM</div><div class="ssub">Respuesta fundamentada y citable</div></div><span class="schev">›</span></div><div class="sdet"><div class="sdeti"><p>El LLM genera la respuesta condicionado por el contexto provisto — no por su memoria de entrenamiento. Puede citar fuentes, admitir incertidumbre, y producir texto coherente.</p><div class="mono">output: respuesta + fuente_doc + página + similitud</div></div></div></div></div>
   </div>
 </section>
 
-<!-- EMBEDDINGS -->
 <section class="s" id="embeddings">
   <div class="stag">§ 03 — Representación semántica</div>
   <h2>¿Qué es un <em>embedding</em>?</h2>
@@ -542,22 +466,15 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
   </div>
   <div style="margin-top:1.25rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem">
     <div class="stag" style="margin-bottom:0.6rem">La propiedad mágica: aritmética semántica</div>
-    <p style="font-size:0.87rem;color:var(--text-m);line-height:1.7">Los embeddings capturan relaciones conceptuales de forma aritmética. El ejemplo clásico:</p>
-    <div style="font-family:var(--fm);font-size:0.85rem;color:var(--teal);margin-top:0.65rem;padding:0.6rem 0.9rem;background:rgba(37,99,235,0.06);border-left:2px solid var(--teal);border-radius:0 4px 4px 0">
-      vector("rey") − vector("hombre") + vector("mujer") ≈ vector("reina")
-    </div>
-  </div>
-  <div style="margin-top:0.9rem;display:flex;align-items:flex-start;gap:0.75rem;background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.25);border-radius:var(--r);padding:0.9rem 1.1rem">
-    <span style="color:var(--blue);font-size:1rem;flex-shrink:0">ℹ</span>
-    <p style="font-size:0.82rem;color:var(--text-m);line-height:1.65"><strong style="color:var(--blue)">Proyección 2D simplificada.</strong> Este gráfico reduce el espacio vectorial a 2 dimensiones para visualizarlo. Los embeddings reales tienen entre <strong style="color:var(--text)">768 y 3072 dimensiones</strong>. Al proyectar se pierde información: palabras que parecen cercanas en 2D pueden estar más alejadas en el espacio real, y viceversa. La similitud coseno siempre se calcula en el espacio completo, nunca en la proyección.</p>
+    <p style="font-size:0.87rem;color:var(--text-m);line-height:1.7">Los embeddings capturan relaciones conceptuales de forma aritmética:</p>
+    <div style="font-family:var(--fm);font-size:0.85rem;color:var(--teal);margin-top:0.65rem;padding:0.6rem 0.9rem;background:rgba(37,99,235,0.06);border-left:2px solid var(--teal);border-radius:0 4px 4px 0">vector("rey") − vector("hombre") + vector("mujer") ≈ vector("reina")</div>
   </div>
 </section>
 
-<!-- INDEXACION -->
 <section class="s" id="indexacion">
   <div class="stag">§ 04 — Fase offline</div>
   <h2>Construyendo la <em>base vectorial</em></h2>
-  <p class="lead">Antes de recibir cualquier consulta, el sistema prepara el índice. Esta fase ocurre una sola vez —o cuando se actualizan los documentos. Hacé clic en un chunk para ver su registro.</p>
+  <p class="lead">Antes de recibir cualquier consulta, el sistema prepara el índice. Hacé clic en un chunk para ver su registro.</p>
   <div class="iflow">
     <div class="inode"><div class="inode-t">Documentos fuente</div><div class="inode-s">PDFs, wikis, contratos</div></div>
     <div class="iarr">→</div>
@@ -569,36 +486,15 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
   </div>
   <div class="vdb">
     <div class="vdb-t">Base de datos vectorial (índice)</div>
-    <div class="crow" data-c="001">
-      <span class="cid">chunk 001</span>
-      <span class="ctxt">"Las vacaciones anuales son de 15 días hábiles..."</span>
-      <span class="cvec">[0.82, 0.31, …]</span>
-    </div>
-    <div class="crow" data-c="002">
-      <span class="cid">chunk 002</span>
-      <span class="ctxt">"El período de prueba dura 3 meses según..."</span>
-      <span class="cvec">[0.44, 0.79, …]</span>
-    </div>
-    <div class="crow" data-c="003">
-      <span class="cid">chunk 003</span>
-      <span class="ctxt">"Los beneficios de salud incluyen cobertura..."</span>
-      <span class="cvec">[0.61, 0.08, …]</span>
-    </div>
-    <div class="crow" data-c="004">
-      <span class="cid">chunk 004</span>
-      <span class="ctxt">"El salario se liquida el último día hábil..."</span>
-      <span class="cvec">[0.19, 0.55, …]</span>
-    </div>
-    <div class="crow" data-c="005">
-      <span class="cid">chunk 005</span>
-      <span class="ctxt">"Los feriados nacionales no descuentan del banco..."</span>
-      <span class="cvec">[0.77, 0.42, …]</span>
-    </div>
+    <div class="crow" data-c="001"><span class="cid">chunk 001</span><span class="ctxt">"Las vacaciones anuales son de 15 días hábiles..."</span><span class="cvec">[0.82, 0.31, …]</span></div>
+    <div class="crow" data-c="002"><span class="cid">chunk 002</span><span class="ctxt">"El período de prueba dura 3 meses según..."</span><span class="cvec">[0.44, 0.79, …]</span></div>
+    <div class="crow" data-c="003"><span class="cid">chunk 003</span><span class="ctxt">"Los beneficios de salud incluyen cobertura..."</span><span class="cvec">[0.61, 0.08, …]</span></div>
+    <div class="crow" data-c="004"><span class="cid">chunk 004</span><span class="ctxt">"El salario se liquida el último día hábil..."</span><span class="cvec">[0.19, 0.55, …]</span></div>
+    <div class="crow" data-c="005"><span class="cid">chunk 005</span><span class="ctxt">"Los feriados nacionales no descuentan del banco..."</span><span class="cvec">[0.77, 0.42, …]</span></div>
   </div>
   <div id="chunkDetail" style="display:none;margin-top:0.75rem;background:var(--surface-2);border:1px solid var(--teal-m);border-radius:var(--r);padding:1.1rem;font-family:var(--fm);font-size:0.78rem;color:var(--text-m)"></div>
 </section>
 
-<!-- RECUPERACION -->
 <section class="s" id="recuperacion">
   <div class="stag">§ 05 — Búsqueda semántica</div>
   <h2>Recuperación por <em>similitud coseno</em></h2>
@@ -612,7 +508,6 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
   <div class="topbox" id="topbox"></div>
 </section>
 
-<!-- CHUNKING -->
 <section class="s" id="chunking">
   <div class="stag">§ 06 — Estrategias de fragmentación</div>
   <h2>Cómo dividir los documentos: <em>chunking</em></h2>
@@ -626,152 +521,32 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
   <div class="cdisplay" id="cdisplay"></div>
 </section>
 
-<!-- METADATOS -->
 <section class="s" id="metadatos">
   <div class="stag">§ 07 — Anatomía del registro vectorial</div>
   <h2>¿Qué se guarda junto al <em>vector</em>?</h2>
   <p class="lead">Cada entrada en la base vectorial tiene tres componentes: el vector, el texto original, y metadatos. Hacé clic en cada grupo para expandirlo.</p>
   <div class="mrec">
     <div class="mrec-hdr">chunk_001_politica_vacaciones · política_rrhh_2024.pdf · entrada #001</div>
-
-    <div class="mgrp open">
-      <div class="mghdr">
-        <span class="mglabel">Identificación</span>
-        <span class="mbadge bid">ID</span>
-        <span class="mgchev">›</span>
-      </div>
-      <div class="mrows">
-        <div class="mrow"><span class="mkey">id</span><span class="mval">"chunk_001_politica_vacaciones"</span><span class="mdesc">Clave única del registro</span></div>
-      </div>
-    </div>
-
-    <div class="mgrp open">
-      <div class="mghdr">
-        <span class="mglabel">Contenido principal</span>
-        <span class="mbadge bcore">CORE</span>
-        <span class="mgchev">›</span>
-      </div>
-      <div class="mrows">
-        <div class="mrow"><span class="mkey">vector</span><span class="mval">[0.82, 0.31, -0.14, … ×1536]</span><span class="mdesc">Embedding del chunk</span></div>
-        <div class="mrow"><span class="mkey">text</span><span class="mval">"Las vacaciones anuales son de 15 días hábiles…"</span><span class="mdesc">Texto original del chunk</span></div>
-      </div>
-    </div>
-
-    <div class="mgrp">
-      <div class="mghdr">
-        <span class="mglabel">Origen del documento</span>
-        <span class="mbadge bmeta">METADATOS</span>
-        <span class="mgchev">›</span>
-      </div>
-      <div class="mrows">
-        <div class="mrow"><span class="mkey">source_file</span><span class="mval">"politica_rrhh_2024.pdf"</span><span class="mdesc">Nombre del archivo fuente</span></div>
-        <div class="mrow"><span class="mkey">page_number</span><span class="mval">4</span><span class="mdesc">Página dentro del PDF</span></div>
-        <div class="mrow"><span class="mkey">section_title</span><span class="mval">"Política de Vacaciones y Licencias"</span><span class="mdesc">Sección de origen</span></div>
-        <div class="mrow"><span class="mkey">chunk_index</span><span class="mval">3</span><span class="mdesc">Posición en el documento</span></div>
-      </div>
-    </div>
-
-    <div class="mgrp">
-      <div class="mghdr">
-        <span class="mglabel">Temporalidad</span>
-        <span class="mbadge bmeta">METADATOS</span>
-        <span class="mgchev">›</span>
-      </div>
-      <div class="mrows">
-        <div class="mrow"><span class="mkey">created_at</span><span class="mval">"2024-03-15T09:22:00Z"</span><span class="mdesc">Fecha de indexación</span></div>
-        <div class="mrow"><span class="mkey">doc_updated_at</span><span class="mval">"2024-02-28"</span><span class="mdesc">Última modificación del doc</span></div>
-        <div class="mrow"><span class="mkey">valid_until</span><span class="mval">"2025-01-01"</span><span class="mdesc">Fecha de expiración del contenido</span></div>
-      </div>
-    </div>
-
-    <div class="mgrp">
-      <div class="mghdr">
-        <span class="mglabel">Control de acceso y filtrado</span>
-        <span class="mbadge bfilt">FILTROS</span>
-        <span class="mgchev">›</span>
-      </div>
-      <div class="mrows">
-        <div class="mrow"><span class="mkey">department</span><span class="mval">"RRHH"</span><span class="mdesc">Propietario del chunk</span></div>
-        <div class="mrow"><span class="mkey">access_level</span><span class="mval">"all_employees"</span><span class="mdesc">Quién puede ver este chunk</span></div>
-        <div class="mrow"><span class="mkey">country</span><span class="mval">"AR"</span><span class="mdesc">Jurisdicción aplicable</span></div>
-        <div class="mrow"><span class="mkey">doc_type</span><span class="mval">"policy"</span><span class="mdesc">Tipo de documento</span></div>
-        <div class="mrow"><span class="mkey">tags</span><span class="mval">["vacaciones","licencia","rrhh"]</span><span class="mdesc">Etiquetas temáticas</span></div>
-      </div>
-    </div>
-
+    <div class="mgrp open"><div class="mghdr"><span class="mglabel">Identificación</span><span class="mbadge bid">ID</span><span class="mgchev">›</span></div><div class="mrows"><div class="mrow"><span class="mkey">id</span><span class="mval">"chunk_001_politica_vacaciones"</span><span class="mdesc">Clave única del registro</span></div></div></div>
+    <div class="mgrp open"><div class="mghdr"><span class="mglabel">Contenido principal</span><span class="mbadge bcore">CORE</span><span class="mgchev">›</span></div><div class="mrows"><div class="mrow"><span class="mkey">vector</span><span class="mval">[0.82, 0.31, -0.14, … ×1536]</span><span class="mdesc">Embedding del chunk</span></div><div class="mrow"><span class="mkey">text</span><span class="mval">"Las vacaciones anuales son de 15 días hábiles…"</span><span class="mdesc">Texto original del chunk</span></div></div></div>
+    <div class="mgrp"><div class="mghdr"><span class="mglabel">Origen del documento</span><span class="mbadge bmeta">METADATOS</span><span class="mgchev">›</span></div><div class="mrows"><div class="mrow"><span class="mkey">source_file</span><span class="mval">"politica_rrhh_2024.pdf"</span><span class="mdesc">Nombre del archivo fuente</span></div><div class="mrow"><span class="mkey">page_number</span><span class="mval">4</span><span class="mdesc">Página dentro del PDF</span></div><div class="mrow"><span class="mkey">section_title</span><span class="mval">"Política de Vacaciones y Licencias"</span><span class="mdesc">Sección de origen</span></div></div></div>
+    <div class="mgrp"><div class="mghdr"><span class="mglabel">Control de acceso y filtrado</span><span class="mbadge bfilt">FILTROS</span><span class="mgchev">›</span></div><div class="mrows"><div class="mrow"><span class="mkey">department</span><span class="mval">"RRHH"</span><span class="mdesc">Propietario del chunk</span></div><div class="mrow"><span class="mkey">access_level</span><span class="mval">"all_employees"</span><span class="mdesc">Quién puede ver este chunk</span></div><div class="mrow"><span class="mkey">tags</span><span class="mval">["vacaciones","licencia","rrhh"]</span><span class="mdesc">Etiquetas temáticas</span></div></div></div>
   </div>
 </section>
 
-<!-- PROMPT -->
 <section class="s" id="prompt">
   <div class="stag">§ 08 — Construcción del contexto</div>
   <h2>El <em>prompt aumentado</em></h2>
-  <p class="lead">El prompt aumentado es el mensaje exacto que recibe el LLM. Está compuesto por cuatro bloques. Hacé clic en cada bloque para expandirlo o desactivarlo con el checkbox.</p>
+  <p class="lead">El prompt aumentado es el mensaje exacto que recibe el LLM. Hacé clic en cada bloque para expandirlo o desactivarlo con el checkbox.</p>
   <div class="pblocks" id="pblocks">
-
-    <div class="pblock pb-sys open" data-tok="85">
-      <div class="pbhdr">
-        <div class="pbnum">①</div>
-        <div class="pblabel">Instrucción de sistema</div>
-        <div class="pbtok">~85 tokens</div>
-        <div class="pbtog">✓</div>
-      </div>
-      <div class="pbcont">Eres un asistente de recursos humanos de la empresa. Tu rol es responder preguntas de empleados basándote exclusivamente en la información proporcionada en el contexto. Responde en español, con tono profesional y claro.</div>
-    </div>
-
-    <div class="pblock pb-ctx open" data-tok="480">
-      <div class="pbhdr">
-        <div class="pbnum">②</div>
-        <div class="pblabel">Contexto recuperado (Top-3 chunks)</div>
-        <div class="pbtok">~480 tokens</div>
-        <div class="pbtog">✓</div>
-      </div>
-      <div class="pbcont">[Fuente: política_rrhh_2024.pdf · p.4 · similitud: 0.97]
-"Las vacaciones anuales son de 15 días hábiles pagados por año trabajado. El empleado debe solicitarlas con al menos 15 días de anticipación al jefe directo."
-
-[Fuente: política_rrhh_2024.pdf · p.4 · similitud: 0.88]
-"Los días de vacaciones no tomados pueden acumularse hasta un máximo de 30 días."
-
-[Fuente: convenio_colectivo_2023.pdf · p.12 · similitud: 0.81]
-"Los empleados con más de 5 años de antigüedad tienen derecho a 20 días hábiles de vacaciones anuales."</div>
-    </div>
-
-    <div class="pblock pb-usr open" data-tok="18">
-      <div class="pbhdr">
-        <div class="pbnum">③</div>
-        <div class="pblabel">Pregunta del usuario</div>
-        <div class="pbtok">~18 tokens</div>
-        <div class="pbtog">✓</div>
-      </div>
-      <div class="pbcont">¿Cuántos días de vacaciones tengo si llevo 6 años en la empresa?</div>
-    </div>
-
-    <div class="pblock pb-cls open" data-tok="42">
-      <div class="pbhdr">
-        <div class="pbnum">④</div>
-        <div class="pblabel">Instrucción de cierre (guardrail)</div>
-        <div class="pbtok">~42 tokens</div>
-        <div class="pbtog">✓</div>
-      </div>
-      <div class="pbcont">Responde únicamente con información presente en el contexto anterior. Si la información no es suficiente para responder con certeza, indícalo explícitamente. No inventes datos ni hagas suposiciones.</div>
-    </div>
-
+    <div class="pblock pb-sys open" data-tok="85"><div class="pbhdr"><div class="pbnum">①</div><div class="pblabel">Instrucción de sistema</div><div class="pbtok">~85 tokens</div><div class="pbtog">✓</div></div><div class="pbcont">Eres un asistente de recursos humanos de la empresa. Tu rol es responder preguntas de empleados basándote exclusivamente en la información proporcionada en el contexto.</div></div>
+    <div class="pblock pb-ctx open" data-tok="480"><div class="pbhdr"><div class="pbnum">②</div><div class="pblabel">Contexto recuperado (Top-3 chunks)</div><div class="pbtok">~480 tokens</div><div class="pbtog">✓</div></div><div class="pbcont">[Fuente: política_rrhh_2024.pdf · p.4 · similitud: 0.97] "Las vacaciones anuales son de 15 días hábiles pagados por año trabajado."</div></div>
+    <div class="pblock pb-usr open" data-tok="18"><div class="pbhdr"><div class="pbnum">③</div><div class="pblabel">Pregunta del usuario</div><div class="pbtok">~18 tokens</div><div class="pbtog">✓</div></div><div class="pbcont">¿Cuántos días de vacaciones tengo si llevo 6 años en la empresa?</div></div>
+    <div class="pblock pb-cls open" data-tok="42"><div class="pbhdr"><div class="pbnum">④</div><div class="pblabel">Instrucción de cierre (guardrail)</div><div class="pbtok">~42 tokens</div><div class="pbtog">✓</div></div><div class="pbcont">Responde únicamente con información presente en el contexto anterior. Si la información no es suficiente, indícalo explícitamente.</div></div>
   </div>
-  <div class="ptokbar">
-    <div>
-      <div class="toknum" id="toknum">625</div>
-      <div class="toklbl">tokens de contexto</div>
-    </div>
-    <div class="tokvis"><div class="tokfill" id="tokfill" style="width:62.5%"></div></div>
-    <div style="font-family:var(--fm);font-size:0.72rem;color:var(--text-d)">max: 1000</div>
-  </div>
-  <div style="margin-top:1rem;background:var(--teal-d);border:1px solid var(--teal-m);border-radius:var(--r);padding:1rem 1.1rem">
-    <div style="font-family:var(--fd);font-size:0.8rem;font-weight:700;color:var(--teal);margin-bottom:0.45rem">Respuesta esperada del LLM:</div>
-    <div style="font-size:0.83rem;color:var(--text-m);line-height:1.65">Según el convenio colectivo vigente (2023, p.12), los empleados con más de 5 años de antigüedad tienen derecho a <strong style="color:var(--text)">20 días hábiles</strong> de vacaciones anuales. Con 6 años en la empresa, te corresponde ese período extendido. Recordá que debés solicitarlas con al menos 15 días de anticipación a tu jefe directo.</div>
-  </div>
+  <div class="ptokbar"><div><div class="toknum" id="toknum">625</div><div class="toklbl">tokens de contexto</div></div><div class="tokvis"><div class="tokfill" id="tokfill" style="width:62.5%"></div></div><div style="font-family:var(--fm);font-size:0.72rem;color:var(--text-d)">max: 1000</div></div>
 </section>
 
-<!-- LLM -->
 <section class="s" id="llm">
   <div class="stag">§ 09 — Generación</div>
   <h2>El <em>LLM</em> como redactor</h2>
@@ -781,459 +556,375 @@ footer{text-align:center;padding:4rem 2rem;border-top:1px solid var(--border);co
     <button class="ltab" data-t="1">RAG vs. LLM estándar</button>
     <button class="ltab" data-t="2">Cuándo falla</button>
   </div>
-
   <div class="lpanel on" id="ltab-0">
     <div class="lflow">
-      <div class="lbox prompt">
-        <div class="lbox-t">Prompt aumentado</div>
-        <div class="litem hi">instrucción sistema</div>
-        <div class="litem hi">chunk 1 (sim 0.97)</div>
-        <div class="litem hi">chunk 2 (sim 0.88)</div>
-        <div class="litem hi">chunk 3 (sim 0.81)</div>
-        <div class="litem hi">pregunta usuario</div>
-        <div class="litem hi">instrucción cierre</div>
-      </div>
+      <div class="lbox prompt"><div class="lbox-t">Prompt aumentado</div><div class="litem hi">instrucción sistema</div><div class="litem hi">chunk 1 (sim 0.97)</div><div class="litem hi">chunk 2 (sim 0.88)</div><div class="litem hi">pregunta usuario</div></div>
       <div class="larr">→</div>
-      <div class="lbox model">
-        <div class="lbox-t">LLM</div>
-        <div class="litem">atención sobre contexto</div>
-        <div class="litem">reconcilia chunks</div>
-        <div class="litem">sintetiza información</div>
-        <div class="litem dm">feed-forward layers</div>
-        <div class="litem">genera token a token</div>
-      </div>
+      <div class="lbox model"><div class="lbox-t">LLM</div><div class="litem">atención sobre contexto</div><div class="litem">reconcilia chunks</div><div class="litem">genera token a token</div></div>
       <div class="larr">→</div>
-      <div class="lbox output">
-        <div class="lbox-t">Respuesta</div>
-        <div class="litem hi">fundamentada en chunks</div>
-        <div class="litem hi">con fuente citada</div>
-        <div class="litem hi">admite incertidumbre</div>
-        <div class="litem hi">coherente y natural</div>
-      </div>
+      <div class="lbox output"><div class="lbox-t">Respuesta</div><div class="litem hi">fundamentada en chunks</div><div class="litem hi">con fuente citada</div><div class="litem hi">admite incertidumbre</div></div>
     </div>
     <div class="lnote">El LLM actúa como redactor, no como fuente de conocimiento</div>
   </div>
-
   <div class="lpanel" id="ltab-1">
     <div class="cgrid">
-      <div class="ccard good">
-        <div class="ccard-t">Con RAG</div>
-        <div class="cq">"¿Cuántos días de vacaciones tengo con 6 años de antigüedad?"</div>
-        <div class="cans">Según el convenio colectivo 2023 (p.12), con más de 5 años de antigüedad te corresponden <strong>20 días hábiles</strong> de vacaciones. Recordá solicitarlas con 15 días de anticipación (política RRHH 2024, p.4).</div>
-        <div class="cpt">Dato correcto y actualizado</div>
-        <div class="cpt">Fuente citada y verificable</div>
-        <div class="cpt">Admite si no tiene información</div>
-      </div>
-      <div class="ccard bad">
-        <div class="ccard-t">LLM estándar (sin RAG)</div>
-        <div class="cq">"¿Cuántos días de vacaciones tengo con 6 años de antigüedad?"</div>
-        <div class="cans">En Argentina, la Ley de Contrato de Trabajo establece <strong>14 días hábiles</strong> para empleados con más de 5 años de antigüedad. Sin embargo, tu empresa podría tener políticas adicionales según convenio colectivo.</div>
-        <div class="cpt">Dato genérico (ley, no tu empresa)</div>
-        <div class="cpt">Sin fuente interna citada</div>
-        <div class="cpt">No sabe las políticas específicas</div>
-      </div>
+      <div class="ccard good"><div class="ccard-t">Con RAG</div><div class="cq">"¿Cuántos días de vacaciones tengo con 6 años de antigüedad?"</div><div class="cans">Según el convenio colectivo 2023 (p.12), con más de 5 años de antigüedad te corresponden <strong>20 días hábiles</strong>.</div><div class="cpt">Dato correcto y actualizado</div><div class="cpt">Fuente citada y verificable</div></div>
+      <div class="ccard bad"><div class="ccard-t">LLM estándar (sin RAG)</div><div class="cq">"¿Cuántos días de vacaciones tengo con 6 años de antigüedad?"</div><div class="cans">En Argentina, la Ley de Contrato de Trabajo establece <strong>14 días hábiles</strong> para empleados con más de 5 años.</div><div class="cpt">Dato genérico (ley, no tu empresa)</div><div class="cpt">Sin fuente interna citada</div></div>
     </div>
   </div>
-
   <div class="lpanel" id="ltab-2">
     <div class="fgrid">
-      <div class="fcard">
-        <div class="fcard-t">Contexto contradictorio</div>
-        <div class="fcard-tx">Si dos chunks dicen cosas distintas (política 2021 vs. 2024), el LLM puede promediar o elegir uno sin aviso.</div>
-        <div class="fsol">Filtrar por metadatos de fecha antes de recuperar</div>
-      </div>
-      <div class="fcard">
-        <div class="fcard-t">Contexto irrelevante</div>
-        <div class="fcard-tx">Si los chunks recuperados no responden la pregunta pero tienen similitud superficial, el LLM puede inventar usando esa información de fondo.</div>
-        <div class="fsol">La instrucción de cierre (guardrail) mitiga esto</div>
-      </div>
-      <div class="fcard">
-        <div class="fcard-t">"Lost in the middle"</div>
-        <div class="fcard-tx">Los LLMs prestan más atención al inicio y al final del contexto. Información crítica en el medio puede ser ignorada.</div>
-        <div class="fsol">Poner los chunks más relevantes primero y último</div>
-      </div>
-      <div class="fcard">
-        <div class="fcard-t">Mezcla con conocimiento propio</div>
-        <div class="fcard-tx">El LLM tiene conocimiento de entrenamiento y puede usarlo para "completar" huecos del contexto de forma imperceptible.</div>
-        <div class="fsol">Instrucción explícita: "solo usa el contexto provisto"</div>
-      </div>
+      <div class="fcard"><div class="fcard-t">Contexto contradictorio</div><div class="fcard-tx">Si dos chunks dicen cosas distintas, el LLM puede promediar o elegir uno sin aviso.</div><div class="fsol">Filtrar por metadatos de fecha antes de recuperar</div></div>
+      <div class="fcard"><div class="fcard-t">"Lost in the middle"</div><div class="fcard-tx">Los LLMs prestan más atención al inicio y al final. Información crítica en el medio puede ser ignorada.</div><div class="fsol">Poner los chunks más relevantes primero y último</div></div>
+      <div class="fcard"><div class="fcard-t">Contexto irrelevante</div><div class="fcard-tx">Si los chunks recuperados no responden la pregunta, el LLM puede inventar usando esa información de fondo.</div><div class="fsol">La instrucción de cierre (guardrail) mitiga esto</div></div>
+      <div class="fcard"><div class="fcard-t">Mezcla con conocimiento propio</div><div class="fcard-tx">El LLM puede usar su conocimiento de entrenamiento para "completar" huecos imperceptiblemente.</div><div class="fsol">Instrucción explícita: "solo usa el contexto provisto"</div></div>
     </div>
   </div>
 </section>
 
-<!-- COSENO -->
+<section class="s" id="moderno">
+  <div class="stag">§ 10 — Arquitectura 2026</div>
+  <h2>RAG <em>Moderno</em></h2>
+  <p class="lead">El RAG clásico fue evolucionando. Las implementaciones actuales agregan capas de precisión entre la recuperación y la generación.</p>
+  <div class="rag-compare">
+    <div class="rag-col classic"><div class="rag-col-t">RAG Clásico (2023)</div><div class="rag-step"><span class="rn">①</span><span class="rt">Pregunta del usuario</span></div><div class="rag-step"><span class="rn">②</span><span class="rt">Embedding de la consulta</span></div><div class="rag-step"><span class="rn">③</span><span class="rt">Búsqueda semántica</span></div><div class="rag-step"><span class="rn">④</span><span class="rt">Top-K chunks</span></div><div class="rag-step"><span class="rn">⑤</span><span class="rt">Prompt aumentado</span></div><div class="rag-step"><span class="rn">⑥</span><span class="rt">Generación con LLM</span></div></div>
+    <div class="rag-col modern"><div class="rag-col-t">RAG Moderno (2025–2026)</div><div class="rag-step"><span class="rn">①</span><span class="rt">Pregunta del usuario</span></div><div class="rag-step new-step"><span class="rn">②</span><span class="rt">Query Expansion / HyDE</span><span class="new-badge">NEW</span></div><div class="rag-step new-step"><span class="rn">③</span><span class="rt">Hybrid Search (BM25 + Semántica)</span><span class="new-badge">NEW</span></div><div class="rag-step"><span class="rn">④</span><span class="rt">Top-K candidatos</span></div><div class="rag-step new-step"><span class="rn">⑤</span><span class="rt">Reranker (Cross-Encoder)</span><span class="new-badge">NEW</span></div><div class="rag-step new-step"><span class="rn">⑥</span><span class="rt">Context Compression</span><span class="new-badge">NEW</span></div><div class="rag-step"><span class="rn">⑦</span><span class="rt">Prompt aumentado</span></div><div class="rag-step"><span class="rn">⑧</span><span class="rt">Generación con LLM</span></div></div>
+  </div>
+  <div class="mgrid">
+    <div class="mcard"><div class="mcard-hdr"><span class="mcard-icon">🔀</span><div class="mcard-info"><div class="mcard-t">Hybrid Search</div><div class="mcard-sub">BM25 + búsqueda semántica</div></div><span class="mcard-chev">›</span></div><div class="mcard-body"><div class="mcard-inner"><p class="mcard-desc">La búsqueda semántica falla con términos técnicos específicos. BM25 es el algoritmo clásico de ranking por keywords. Hybrid Search fusiona ambas señales.</p><div class="mcard-flow"><div class="mf-node">Query</div><div class="mf-arr">→</div><div class="mf-node hi">Embedding</div><div class="mf-arr">+</div><div class="mf-node hi">BM25</div><div class="mf-arr">→</div><div class="mf-node">Fusion</div></div><div class="mcard-gain">Recall mejora ~15-25% en dominios técnicos</div></div></div></div>
+    <div class="mcard"><div class="mcard-hdr"><span class="mcard-icon">🎯</span><div class="mcard-info"><div class="mcard-t">Reranker</div><div class="mcard-sub">Cross-Encoder sobre los candidatos</div></div><span class="mcard-chev">›</span></div><div class="mcard-body"><div class="mcard-inner"><p class="mcard-desc">Un Cross-Encoder lee la pregunta y el chunk juntos, produciendo un score de relevancia más fino. Se aplica solo sobre los top-K candidatos.</p><div class="mcard-flow"><div class="mf-node">Top-20</div><div class="mf-arr">→</div><div class="mf-node hi">Cross-Encoder</div><div class="mf-arr">→</div><div class="mf-node">Top-3 finales</div></div><div class="mcard-gain">Precision@3 mejora ~20-35%</div></div></div></div>
+    <div class="mcard"><div class="mcard-hdr"><span class="mcard-icon">✂️</span><div class="mcard-info"><div class="mcard-t">Context Compression</div><div class="mcard-sub">Extrae solo lo relevante del chunk</div></div><span class="mcard-chev">›</span></div><div class="mcard-body"><div class="mcard-inner"><p class="mcard-desc">Un chunk de 500 tokens puede contener la respuesta en 2 oraciones. Context Compression extrae solo las oraciones relevantes antes de insertar en el prompt.</p><div class="mcard-flow"><div class="mf-node">Chunk 500 tok</div><div class="mf-arr">→</div><div class="mf-node hi">Extractor</div><div class="mf-arr">→</div><div class="mf-node hi">80 tok</div></div><div class="mcard-gain">Reducción de tokens del 60-80%</div></div></div></div>
+    <div class="mcard"><div class="mcard-hdr"><span class="mcard-icon">🤖</span><div class="mcard-info"><div class="mcard-t">Agentic RAG</div><div class="mcard-sub">El LLM decide cómo y cuándo buscar</div></div><span class="mcard-chev">›</span></div><div class="mcard-body"><div class="mcard-inner"><p class="mcard-desc">El LLM puede descomponer preguntas complejas en sub-consultas, decidir si necesita una o varias búsquedas, y re-consultar si los resultados no son suficientes.</p><div class="mcard-flow"><div class="mf-node">Pregunta compleja</div><div class="mf-arr">→</div><div class="mf-node hi">Plan</div><div class="mf-arr">→</div><div class="mf-node hi">N búsquedas</div></div><div class="mcard-gain">Resuelve preguntas multi-hop</div></div></div></div>
+  </div>
+</section>
+
 <section class="s" id="coseno">
   <div class="stag">§ 11 — Para los curiosos</div>
   <h2>¿Cómo se calcula la <em>similitud coseno</em>?</h2>
-  <p class="lead">La métrica matemática detrás de toda búsqueda semántica. Mide el coseno del ángulo entre dos vectores — un número entre −1 y 1 que indica qué tan "cerca" están en significado, independientemente de su tamaño.</p>
-
+  <p class="lead">La métrica matemática detrás de toda búsqueda semántica. Mide el coseno del ángulo entre dos vectores — un número entre −1 y 1.</p>
   <div class="cos-formula">
     <span class="cos-lhs">similitud(A, B) =</span>
-    <div class="cos-frac">
-      <span class="cos-num">A · B</span>
-      <div class="cos-line"></div>
-      <span class="cos-den">‖A‖ × ‖B‖</span>
-    </div>
+    <div class="cos-frac"><span class="cos-num">A · B</span><div class="cos-line"></div><span class="cos-den">‖A‖ × ‖B‖</span></div>
     <span class="cos-eq">=</span>
-    <div class="cos-frac">
-      <span class="cos-num">producto escalar</span>
-      <div class="cos-line"></div>
-      <span class="cos-den">magnitud A × magnitud B</span>
-    </div>
+    <div class="cos-frac"><span class="cos-num">producto escalar</span><div class="cos-line"></div><span class="cos-den">magnitud A × magnitud B</span></div>
   </div>
-
   <div class="cos-range">
-    <div class="cos-range-item">
-      <div class="cos-range-val">−1</div>
-      <div class="cos-range-label">Vectores opuestos</div>
-    </div>
-    <div class="cos-range-item">
-      <div class="cos-range-val">0</div>
-      <div class="cos-range-label">Sin relación</div>
-    </div>
-    <div class="cos-range-item">
-      <div class="cos-range-val">0.49</div>
-      <div class="cos-range-label">Relación moderada</div>
-    </div>
-    <div class="cos-range-item">
-      <div class="cos-range-val">0.67</div>
-      <div class="cos-range-label">Alta similitud</div>
-    </div>
-    <div class="cos-range-item">
-      <div class="cos-range-val">1</div>
-      <div class="cos-range-label">Vectores idénticos</div>
-    </div>
+    <div class="cos-range-item"><div class="cos-range-val">−1</div><div class="cos-range-label">Vectores opuestos</div></div>
+    <div class="cos-range-item"><div class="cos-range-val">0</div><div class="cos-range-label">Sin relación</div></div>
+    <div class="cos-range-item"><div class="cos-range-val">0.49</div><div class="cos-range-label">Relación moderada</div></div>
+    <div class="cos-range-item"><div class="cos-range-val">0.67</div><div class="cos-range-label">Alta similitud</div></div>
+    <div class="cos-range-item"><div class="cos-range-val">1</div><div class="cos-range-label">Vectores idénticos</div></div>
   </div>
-
   <div class="cos-tabs">
     <button class="cos-tab on" data-ct="0">Con vectores numéricos</button>
     <button class="cos-tab" data-ct="1">Con palabras reales</button>
   </div>
-
-  <!-- PANEL 0: Numeric -->
   <div class="cos-panel on" id="cpanel-0">
     <div class="vec-grid">
-      <div class="vec-card">
-        <div class="vec-label">Vector A (10 dimensiones)</div>
-        <div class="vec-vals">(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)</div>
-      </div>
-      <div class="vec-card">
-        <div class="vec-label">Vector B (10 dimensiones)</div>
-        <div class="vec-vals">(2, 0, 1, 3, −1, 4, 0, 2, 5, −2)</div>
-      </div>
+      <div class="vec-card"><div class="vec-label">Vector A (10 dimensiones)</div><div class="vec-vals">(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)</div></div>
+      <div class="vec-card"><div class="vec-label">Vector B (10 dimensiones)</div><div class="vec-vals">(2, 0, 1, 3, −1, 4, 0, 2, 5, −2)</div></div>
     </div>
-
     <div class="cos-steps" id="steps-num">
-      <div class="cos-step revealed" data-step="0">
-        <div class="cos-step-hdr">
-          <div class="cos-step-n">1</div>
-          <div class="cos-step-title">Producto escalar — A · B</div>
-          <div class="cos-step-result">= 77</div>
-        </div>
-        <div class="cos-step-body">
-          Multiplicamos cada par de componentes y sumamos todos los resultados:
-          <div class="cos-step-calc">
-            (1×2) + (2×0) + (3×1) + (4×3) + (5×−1) + (6×4) + (7×0) + (8×2) + (9×5) + (10×−2)<br>
-            = 2 + 0 + 3 + 12 − 5 + 24 + 0 + 16 + 45 − 20 = <strong>77</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="cos-step" data-step="1">
-        <div class="cos-step-hdr">
-          <div class="cos-step-n">2</div>
-          <div class="cos-step-title">Magnitud de A — ‖A‖</div>
-          <div class="cos-step-result">≈ 19.62</div>
-        </div>
-        <div class="cos-step-body">
-          Elevamos cada componente al cuadrado, sumamos y aplicamos raíz cuadrada:
-          <div class="cos-step-calc">
-            √(1² + 2² + 3² + 4² + 5² + 6² + 7² + 8² + 9² + 10²)<br>
-            = √(1 + 4 + 9 + 16 + 25 + 36 + 49 + 64 + 81 + 100)<br>
-            = √385 ≈ <strong>19.62</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="cos-step" data-step="2">
-        <div class="cos-step-hdr">
-          <div class="cos-step-n">3</div>
-          <div class="cos-step-title">Magnitud de B — ‖B‖</div>
-          <div class="cos-step-result">= 8</div>
-        </div>
-        <div class="cos-step-body">
-          Los negativos se vuelven positivos al elevar al cuadrado:
-          <div class="cos-step-calc">
-            √(2² + 0² + 1² + 3² + (−1)² + 4² + 0² + 2² + 5² + (−2)²)<br>
-            = √(4 + 0 + 1 + 9 + 1 + 16 + 0 + 4 + 25 + 4)<br>
-            = √64 = <strong>8</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="cos-step" data-step="3">
-        <div class="cos-step-hdr">
-          <div class="cos-step-n">4</div>
-          <div class="cos-step-title">Similitud coseno final</div>
-          <div class="cos-step-result">≈ 0.49</div>
-        </div>
-        <div class="cos-step-body">
-          Dividimos el producto escalar por el producto de las magnitudes:
-          <div class="cos-step-calc">
-            77 / (19.62 × 8) = 77 / 156.96 ≈ <strong>0.49</strong>
-          </div>
-          <div class="cos-gauge" style="margin-top:0.85rem">
-            <svg class="cos-gauge-svg" width="80" height="80" viewBox="0 0 80 80">
-              <circle cx="40" cy="40" r="30" fill="none" stroke="#E4E2DB" stroke-width="6"/>
-              <circle cx="40" cy="40" r="30" fill="none" stroke="#2563EB" stroke-width="6"
-                stroke-dasharray="94.25 188.5" stroke-dashoffset="47.12" stroke-linecap="round"
-                transform="rotate(-90 40 40)"/>
-              <text x="40" y="45" text-anchor="middle" font-family="DM Sans" font-size="13" font-weight="700" fill="#111827">0.49</text>
-            </svg>
-            <div class="cos-gauge-info">
-              <div class="cos-gauge-val">≈ 60° entre vectores</div>
-              <div class="cos-gauge-desc">Relación positiva moderada. Los vectores comparten dirección parcial pero no son similares. En texto: los documentos hablan de temas relacionados pero distintos.</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="cos-step revealed" data-step="0"><div class="cos-step-hdr"><div class="cos-step-n">1</div><div class="cos-step-title">Producto escalar — A · B</div><div class="cos-step-result">= 77</div></div><div class="cos-step-body">Multiplicamos cada par de componentes y sumamos:<div class="cos-step-calc">(1×2)+(2×0)+(3×1)+(4×3)+(5×−1)+(6×4)+(7×0)+(8×2)+(9×5)+(10×−2) = <strong>77</strong></div></div></div>
+      <div class="cos-step" data-step="1"><div class="cos-step-hdr"><div class="cos-step-n">2</div><div class="cos-step-title">Magnitud de A — ‖A‖</div><div class="cos-step-result">≈ 19.62</div></div><div class="cos-step-body"><div class="cos-step-calc">√(1²+2²+…+10²) = √385 ≈ <strong>19.62</strong></div></div></div>
+      <div class="cos-step" data-step="2"><div class="cos-step-hdr"><div class="cos-step-n">3</div><div class="cos-step-title">Magnitud de B — ‖B‖</div><div class="cos-step-result">= 8</div></div><div class="cos-step-body"><div class="cos-step-calc">√(4+0+1+9+1+16+0+4+25+4) = √64 = <strong>8</strong></div></div></div>
+      <div class="cos-step" data-step="3"><div class="cos-step-hdr"><div class="cos-step-n">4</div><div class="cos-step-title">Similitud coseno final</div><div class="cos-step-result">≈ 0.49</div></div><div class="cos-step-body"><div class="cos-step-calc">77 / (19.62 × 8) = 77 / 156.96 ≈ <strong>0.49</strong></div><div class="cos-gauge" style="margin-top:0.85rem"><svg class="cos-gauge-svg" width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="none" stroke="#E4E2DB" stroke-width="6"/><circle cx="40" cy="40" r="30" fill="none" stroke="#2563EB" stroke-width="6" stroke-dasharray="94.25 188.5" stroke-dashoffset="47.12" stroke-linecap="round" transform="rotate(-90 40 40)"/><text x="40" y="45" text-anchor="middle" font-family="DM Sans" font-size="13" font-weight="700" fill="#111827">0.49</text></svg><div><div class="cos-gauge-val">≈ 60° entre vectores</div><div class="cos-gauge-desc">Relación positiva moderada.</div></div></div></div></div>
     </div>
     <button class="btn-step" id="btn-num" onclick="revealNext('num')">Siguiente paso →</button>
   </div>
-
-  <!-- PANEL 1: Words -->
   <div class="cos-panel" id="cpanel-1">
-    <p style="font-size:0.88rem;color:var(--text-m);margin-bottom:1.1rem;line-height:1.7">Comparamos dos frases. El vocabulario completo tiene 6 palabras — cada frase se convierte en un vector de 6 dimensiones donde cada número indica cuántas veces aparece esa palabra.</p>
-
+    <p style="font-size:0.88rem;color:var(--text-m);margin-bottom:1.1rem;line-height:1.7">Comparamos dos frases usando conteo de palabras como vectores.</p>
     <table class="vocab-table">
-      <thead>
-        <tr>
-          <th>Frase</th>
-          <th>el</th><th>perro</th><th>gato</th><th>corre</th><th>salta</th><th>duerme</th>
-          <th>Vector</th>
-        </tr>
-      </thead>
+      <thead><tr><th>Frase</th><th>el</th><th>perro</th><th>gato</th><th>corre</th><th>salta</th><th>duerme</th><th>Vector</th></tr></thead>
       <tbody>
-        <tr>
-          <td class="row-label">"El perro corre"</td>
-          <td class="match">1</td><td class="match">1</td><td class="diff">0</td><td class="match">1</td><td>0</td><td>0</td>
-          <td style="font-family:var(--fm);font-size:0.75rem;color:var(--teal)">(1,1,0,1,0,0)</td>
-        </tr>
-        <tr>
-          <td class="row-label">"El gato corre"</td>
-          <td class="match">1</td><td class="diff">0</td><td class="match">1</td><td class="match">1</td><td>0</td><td>0</td>
-          <td style="font-family:var(--fm);font-size:0.75rem;color:var(--teal)">(1,0,1,1,0,0)</td>
-        </tr>
+        <tr><td class="row-label">"El perro corre"</td><td class="match">1</td><td class="match">1</td><td class="diff">0</td><td class="match">1</td><td>0</td><td>0</td><td style="font-family:var(--fm);font-size:0.75rem;color:var(--teal)">(1,1,0,1,0,0)</td></tr>
+        <tr><td class="row-label">"El gato corre"</td><td class="match">1</td><td class="diff">0</td><td class="match">1</td><td class="match">1</td><td>0</td><td>0</td><td style="font-family:var(--fm);font-size:0.75rem;color:var(--teal)">(1,0,1,1,0,0)</td></tr>
       </tbody>
     </table>
-
     <div class="cos-steps" id="steps-words">
-      <div class="cos-step revealed" data-step="0">
-        <div class="cos-step-hdr">
-          <div class="cos-step-n">1</div>
-          <div class="cos-step-title">Producto escalar</div>
-          <div class="cos-step-result">= 2</div>
-        </div>
-        <div class="cos-step-body">
-          <div class="cos-step-calc">
-            (1×1) + (1×0) + (0×1) + (1×1) + (0×0) + (0×0)<br>
-            = 1 + 0 + 0 + 1 + 0 + 0 = <strong>2</strong>
-          </div>
-          Solo las dimensiones donde AMBAS frases tienen 1 contribuyen al producto.
-        </div>
-      </div>
-
-      <div class="cos-step" data-step="1">
-        <div class="cos-step-hdr">
-          <div class="cos-step-n">2</div>
-          <div class="cos-step-title">Magnitudes ‖A‖ y ‖B‖</div>
-          <div class="cos-step-result">= √3 ≈ 1.732</div>
-        </div>
-        <div class="cos-step-body">
-          Ambas frases tienen 3 palabras del vocabulario, entonces ambas magnitudes son iguales:
-          <div class="cos-step-calc">
-            ‖A‖ = √(1²+1²+0²+1²+0²+0²) = √3 ≈ <strong>1.732</strong><br>
-            ‖B‖ = √(1²+0²+1²+1²+0²+0²) = √3 ≈ <strong>1.732</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="cos-step" data-step="2">
-        <div class="cos-step-hdr">
-          <div class="cos-step-n">3</div>
-          <div class="cos-step-title">Similitud coseno final</div>
-          <div class="cos-step-result">≈ 0.67</div>
-        </div>
-        <div class="cos-step-body">
-          <div class="cos-step-calc">
-            2 / (1.732 × 1.732) = 2 / 3 ≈ <strong>0.67</strong>
-          </div>
-          <div class="cos-gauge" style="margin-top:0.85rem">
-            <svg class="cos-gauge-svg" width="80" height="80" viewBox="0 0 80 80">
-              <circle cx="40" cy="40" r="30" fill="none" stroke="#E4E2DB" stroke-width="6"/>
-              <circle cx="40" cy="40" r="30" fill="none" stroke="#2563EB" stroke-width="6"
-                stroke-dasharray="125.66 188.5" stroke-dashoffset="47.12" stroke-linecap="round"
-                transform="rotate(-90 40 40)"/>
-              <text x="40" y="45" text-anchor="middle" font-family="DM Sans" font-size="13" font-weight="700" fill="#111827">0.67</text>
-            </svg>
-            <div class="cos-gauge-info">
-              <div class="cos-gauge-val">Alta similitud — 67%</div>
-              <div class="cos-gauge-desc">Las frases comparten estructura y acción, difieren solo en un elemento. En un sistema RAG real, este chunk sería recuperado para preguntas sobre cualquiera de los dos animales.</div>
-            </div>
-          </div>
-          <div style="margin-top:0.9rem;padding:0.85rem 1rem;background:var(--surface-2);border-radius:8px;font-size:0.82rem;color:var(--text-m);line-height:1.65">
-            <strong style="color:var(--text)">¿Por qué RAG usa embeddings y no conteo de palabras?</strong><br>
-            Con conteo de palabras, "perro" y "can" tendrían similitud 0 aunque signifiquen lo mismo. Los embeddings codifican el <em>significado</em> en lugar de las palabras literales — por eso detectan sinónimos, contexto y conceptos relacionados.
-          </div>
-        </div>
-      </div>
+      <div class="cos-step revealed" data-step="0"><div class="cos-step-hdr"><div class="cos-step-n">1</div><div class="cos-step-title">Producto escalar</div><div class="cos-step-result">= 2</div></div><div class="cos-step-body"><div class="cos-step-calc">(1×1)+(1×0)+(0×1)+(1×1) = <strong>2</strong></div></div></div>
+      <div class="cos-step" data-step="1"><div class="cos-step-hdr"><div class="cos-step-n">2</div><div class="cos-step-title">Magnitudes</div><div class="cos-step-result">= √3 ≈ 1.732</div></div><div class="cos-step-body"><div class="cos-step-calc">‖A‖ = ‖B‖ = √3 ≈ <strong>1.732</strong></div></div></div>
+      <div class="cos-step" data-step="2"><div class="cos-step-hdr"><div class="cos-step-n">3</div><div class="cos-step-title">Similitud coseno</div><div class="cos-step-result">≈ 0.67</div></div><div class="cos-step-body"><div class="cos-step-calc">2 / (1.732 × 1.732) = 2/3 ≈ <strong>0.67</strong></div><div class="cos-gauge" style="margin-top:0.85rem"><svg class="cos-gauge-svg" width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="none" stroke="#E4E2DB" stroke-width="6"/><circle cx="40" cy="40" r="30" fill="none" stroke="#2563EB" stroke-width="6" stroke-dasharray="125.66 188.5" stroke-dashoffset="47.12" stroke-linecap="round" transform="rotate(-90 40 40)"/><text x="40" y="45" text-anchor="middle" font-family="DM Sans" font-size="13" font-weight="700" fill="#111827">0.67</text></svg><div><div class="cos-gauge-val">Alta similitud — 67%</div><div class="cos-gauge-desc">Las frases comparten estructura y acción.</div></div></div></div></div>
     </div>
     <button class="btn-step" id="btn-words" onclick="revealNext('words')">Siguiente paso →</button>
   </div>
 </section>
 
-<!-- RAG MODERNO -->
-<section class="s" id="moderno">
-  <div class="stag">§ 10 — Arquitectura 2026</div>
-  <h2>RAG <em>Moderno</em></h2>
-  <p class="lead">El RAG clásico fue evolucionando. Las implementaciones actuales agregan capas de precisión entre la recuperación y la generación. Seleccioná cada componente para entender qué agrega y por qué importa.</p>
+<!-- §12 NUEVA: DECISION EMBEDDING -->
+<section class="s" id="decision">
+  <div class="stag">§ 12 — Decisión práctica</div>
+  <h2>¿Cuándo y qué <em>embebés</em>?</h2>
+  <p class="lead">El mismo stack técnico (BGE-M3 + pgvector) sirve para tres patrones distintos. Elegir el incorrecto es el error más común en implementaciones reales. Tres preguntas para llegar al patrón correcto para tu caso.</p>
 
-  <div class="rag-compare">
-    <div class="rag-col classic">
-      <div class="rag-col-t">RAG Clásico (2023)</div>
-      <div class="rag-step"><span class="rn">①</span><span class="rt">Pregunta del usuario</span></div>
-      <div class="rag-step"><span class="rn">②</span><span class="rt">Embedding de la consulta</span></div>
-      <div class="rag-step"><span class="rn">③</span><span class="rt">Búsqueda semántica</span></div>
-      <div class="rag-step"><span class="rn">④</span><span class="rt">Top-K chunks</span></div>
-      <div class="rag-step"><span class="rn">⑤</span><span class="rt">Prompt aumentado</span></div>
-      <div class="rag-step"><span class="rn">⑥</span><span class="rt">Generación con LLM</span></div>
-    </div>
-    <div class="rag-col modern">
-      <div class="rag-col-t">RAG Moderno (2025–2026)</div>
-      <div class="rag-step"><span class="rn">①</span><span class="rt">Pregunta del usuario</span></div>
-      <div class="rag-step new-step"><span class="rn">②</span><span class="rt">Query Expansion / HyDE</span><span class="new-badge">NEW</span></div>
-      <div class="rag-step new-step"><span class="rn">③</span><span class="rt">Hybrid Search (BM25 + Semántica)</span><span class="new-badge">NEW</span></div>
-      <div class="rag-step"><span class="rn">④</span><span class="rt">Top-K candidatos</span></div>
-      <div class="rag-step new-step"><span class="rn">⑤</span><span class="rt">Reranker (Cross-Encoder)</span><span class="new-badge">NEW</span></div>
-      <div class="rag-step new-step"><span class="rn">⑥</span><span class="rt">Context Compression</span><span class="new-badge">NEW</span></div>
-      <div class="rag-step"><span class="rn">⑦</span><span class="rt">Prompt aumentado</span></div>
-      <div class="rag-step"><span class="rn">⑧</span><span class="rt">Generación con LLM</span></div>
-    </div>
-  </div>
+  <div id="dec-tree">
 
-  <div class="mgrid">
-
-    <div class="mcard" id="mc-hybrid">
-      <div class="mcard-hdr">
-        <span class="mcard-icon">🔀</span>
-        <div class="mcard-info">
-          <div class="mcard-t">Hybrid Search</div>
-          <div class="mcard-sub">BM25 + búsqueda semántica</div>
-        </div>
-        <span class="mcard-chev">›</span>
+    <div class="dec-step active" id="ds-0">
+      <div class="dec-breadcrumb"><span class="dec-bc-item active">Inicio</span></div>
+      <div class="dec-q">¿Qué querés <em style="color:var(--teal)">embeber</em>?</div>
+      <p class="dec-help">Esta es la pregunta más importante. Define todo lo demás: qué modelo usás, dónde corre, y qué problema resolvés.</p>
+      <div class="dec-choices">
+        <button class="dec-choice" data-next="ds-1">
+          <div class="dec-choice-icon">💬</div>
+          <div class="dec-choice-body"><div class="dec-choice-title">Las preguntas del usuario</div><div class="dec-choice-sub">Para saber si ya respondí algo similar antes</div></div>
+          <span class="dec-arr">›</span>
+        </button>
+        <button class="dec-choice" data-next="ds-2">
+          <div class="dec-choice-icon">🗄️</div>
+          <div class="dec-choice-body"><div class="dec-choice-title">Los datos del negocio</div><div class="dec-choice-sub">Para buscar información relevante en documentos o registros</div></div>
+          <span class="dec-arr">›</span>
+        </button>
       </div>
-      <div class="mcard-body"><div class="mcard-inner">
-        <p class="mcard-desc">La búsqueda puramente semántica falla con términos técnicos específicos: un código de error, un nombre de fármaco, un número de artículo. BM25 es el algoritmo clásico de ranking por keywords que captura exactamente eso. Hybrid Search fusiona ambas señales con un peso configurable (RRF o score lineal).</p>
-        <div class="mcard-flow">
-          <div class="mf-node">Query</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node hi">Embedding (semántica)</div>
-          <div class="mf-arr">+</div>
-          <div class="mf-node hi">BM25 (keywords)</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node">Fusion (RRF)</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node">Top-K</div>
-        </div>
-        <div class="mcard-gain">Recall mejora ~15-25% en dominios técnicos</div>
-      </div></div>
     </div>
 
-    <div class="mcard" id="mc-rerank">
-      <div class="mcard-hdr">
-        <span class="mcard-icon">🎯</span>
-        <div class="mcard-info">
-          <div class="mcard-t">Reranker</div>
-          <div class="mcard-sub">Cross-Encoder sobre los candidatos</div>
-        </div>
-        <span class="mcard-chev">›</span>
+    <div class="dec-step" id="ds-1">
+      <div class="dec-breadcrumb"><span class="dec-bc-item">Inicio</span><span class="dec-bc-sep">›</span><span class="dec-bc-item active">Preguntas del usuario</span></div>
+      <div class="dec-q">¿Las preguntas pueden contener <em style="color:var(--teal)">datos privados</em>?</div>
+      <p class="dec-help">Por ejemplo: "¿cuál es el saldo de mi cuenta?" incluye contexto del cliente. "¿cuál es el horario de atención?" no incluye nada privado.</p>
+      <div class="dec-choices">
+        <button class="dec-choice" data-next="res-semcache-local">
+          <div class="dec-choice-icon">🔒</div>
+          <div class="dec-choice-body"><div class="dec-choice-title">Sí — mencionan clientes, saldos, datos del negocio</div><div class="dec-choice-sub">Como en la cerealera o el lab clínico</div></div>
+          <span class="dec-arr">›</span>
+        </button>
+        <button class="dec-choice" data-next="res-semcache-api">
+          <div class="dec-choice-icon">🌐</div>
+          <div class="dec-choice-body"><div class="dec-choice-title">No — preguntas genéricas sin datos sensibles</div><div class="dec-choice-sub">FAQs, consultas sobre políticas, soporte estándar</div></div>
+          <span class="dec-arr">›</span>
+        </button>
       </div>
-      <div class="mcard-body"><div class="mcard-inner">
-        <p class="mcard-desc">El embedding compara vectores independientes —rápido pero con pérdida de señal. Un Cross-Encoder lee la pregunta y el chunk juntos en una sola pasada, lo que produce un score de relevancia mucho más fino. Se aplica solo sobre los top-K candidatos porque es computacionalmente costoso.</p>
-        <div class="mcard-flow">
-          <div class="mf-node">Top-20 candidatos</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node hi">Cross-Encoder(query, chunk)</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node">Re-ordenados</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node">Top-3 finales</div>
-        </div>
-        <div class="mcard-gain">Precision@3 mejora ~20-35% sobre el ranking inicial</div>
-      </div></div>
+      <button class="dec-back" data-back="ds-0">‹ volver</button>
     </div>
 
-    <div class="mcard" id="mc-compress">
-      <div class="mcard-hdr">
-        <span class="mcard-icon">✂️</span>
-        <div class="mcard-info">
-          <div class="mcard-t">Context Compression</div>
-          <div class="mcard-sub">Extrae solo lo relevante del chunk</div>
-        </div>
-        <span class="mcard-chev">›</span>
+    <div class="dec-step" id="ds-2">
+      <div class="dec-breadcrumb"><span class="dec-bc-item">Inicio</span><span class="dec-bc-sep">›</span><span class="dec-bc-item active">Datos del negocio</span></div>
+      <div class="dec-q">¿Los datos tienen <em style="color:var(--teal)">texto libre</em> o son principalmente numéricos?</div>
+      <p class="dec-help">La búsqueda semántica aporta valor cuando hay lenguaje natural que interpretar. Para números, fechas y códigos estructurados, SQL exacto siempre gana.</p>
+      <div class="dec-choices">
+        <button class="dec-choice" data-next="ds-3">
+          <div class="dec-choice-icon">📝</div>
+          <div class="dec-choice-body"><div class="dec-choice-title">Texto libre — observaciones, notas, diagnósticos, informes</div><div class="dec-choice-sub">Como registros clínicos, notas de reuniones, descripciones</div></div>
+          <span class="dec-arr">›</span>
+        </button>
+        <button class="dec-choice" data-next="res-sql">
+          <div class="dec-choice-icon">🔢</div>
+          <div class="dec-choice-body"><div class="dec-choice-title">Principalmente numérico — saldos, stock, asientos, fechas</div><div class="dec-choice-sub">Como una base contable, inventario, movimientos financieros</div></div>
+          <span class="dec-arr">›</span>
+        </button>
       </div>
-      <div class="mcard-body"><div class="mcard-inner">
-        <p class="mcard-desc">Un chunk de 500 tokens puede contener la respuesta en 2 oraciones. Enviar el chunk completo agota la ventana de contexto del LLM con ruido. Context Compression usa un modelo ligero para extraer solo las oraciones relevantes antes de insertar en el prompt —reduciendo tokens y mejorando la señal-ruido.</p>
-        <div class="mcard-flow">
-          <div class="mf-node">Chunk (500 tokens)</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node hi">Extractor LLM ligero</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node hi">Extracto (80 tokens)</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node">Prompt</div>
-        </div>
-        <div class="mcard-gain">Reducción de tokens de contexto del 60-80%</div>
-      </div></div>
+      <button class="dec-back" data-back="ds-0">‹ volver</button>
     </div>
 
-    <div class="mcard" id="mc-agentic">
-      <div class="mcard-hdr">
-        <span class="mcard-icon">🤖</span>
-        <div class="mcard-info">
-          <div class="mcard-t">Agentic RAG</div>
-          <div class="mcard-sub">El LLM decide cómo y cuándo buscar</div>
-        </div>
-        <span class="mcard-chev">›</span>
+    <div class="dec-step" id="ds-3">
+      <div class="dec-breadcrumb"><span class="dec-bc-item">Inicio</span><span class="dec-bc-sep">›</span><span class="dec-bc-item">Datos del negocio</span><span class="dec-bc-sep">›</span><span class="dec-bc-item active">Texto libre</span></div>
+      <div class="dec-q">¿Los datos contienen <em style="color:var(--teal)">información personal</em> o confidencial?</div>
+      <p class="dec-help">Registros médicos, datos de pacientes, información de clientes identificables. Si el dato puede identificar a una persona, es privado.</p>
+      <div class="dec-choices">
+        <button class="dec-choice" data-next="res-rag-local">
+          <div class="dec-choice-icon">🏥</div>
+          <div class="dec-choice-body"><div class="dec-choice-title">Sí — datos clínicos, personales o confidenciales</div><div class="dec-choice-sub">Como el laboratorio clínico o documentos internos de clientes</div></div>
+          <span class="dec-arr">›</span>
+        </button>
+        <button class="dec-choice" data-next="res-rag-api">
+          <div class="dec-choice-icon">📄</div>
+          <div class="dec-choice-body"><div class="dec-choice-title">No — documentación pública, manuales, FAQs, políticas</div><div class="dec-choice-sub">Contenido que no identifica personas ni revela datos sensibles</div></div>
+          <span class="dec-arr">›</span>
+        </button>
       </div>
-      <div class="mcard-body"><div class="mcard-inner">
-        <p class="mcard-desc">En RAG clásico la consulta va directo al índice. En Agentic RAG, el LLM puede descomponer una pregunta compleja en sub-consultas, decidir si la respuesta requiere una o varias búsquedas, evaluar si los resultados son suficientes, y re-consultar si no lo son. El modelo actúa como un agente con herramienta de búsqueda, no como receptor pasivo de contexto.</p>
-        <div class="mcard-flow">
-          <div class="mf-node">Pregunta compleja</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node hi">Plan (sub-queries)</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node hi">N búsquedas</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node hi">Evalúa suficiencia</div>
-          <div class="mf-arr">→</div>
-          <div class="mf-node">Respuesta</div>
-        </div>
-        <div class="mcard-gain">Resuelve preguntas multi-hop que el RAG clásico no puede</div>
-      </div></div>
+      <button class="dec-back" data-back="ds-2">‹ volver</button>
     </div>
 
-  </div>
+    <!-- RESULTADO: caché semántico local -->
+    <div class="dec-step" id="res-semcache-local">
+      <div class="dec-breadcrumb"><span class="dec-bc-item">Inicio</span><span class="dec-bc-sep">›</span><span class="dec-bc-item">Preguntas</span><span class="dec-bc-sep">›</span><span class="dec-bc-item active">Con datos privados</span></div>
+      <div class="dec-result">
+        <div class="dec-result-badge local">🏠 Embedding local obligatorio</div>
+        <div class="dec-result-title">Caché semántico — BGE-M3 local</div>
+        <div class="dec-result-body">
+          <p>Embebés las <strong>preguntas del usuario</strong>, no los datos del negocio. Los datos contables o clínicos quedan en su base original intactos. Solo guardás pares (embedding de la pregunta → respuesta ya generada) en pgvector.</p>
+          <p>BGE-M3 debe correr <strong>en tu infra local</strong>: si mandás las preguntas a una API externa para embeber, esas preguntas (que contienen datos del cliente) salen de tu infraestructura. El mismo problema que usar Gemini API para esto.</p>
+          <div class="dec-result-flow">
+            <div class="dec-flow-node hi">Pregunta usuario</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node hi">BGE-M3 local</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node">pgvector coseno ≥ 0.92?</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node ok">Respuesta cacheada</div>
+          </div>
+          <div class="dec-result-cases">
+            <div class="dec-case">
+              <div class="dec-case-label">Caso concreto</div>
+              <div class="dec-case-text">Cerealera: "¿cuánto me deben?" y "¿cuál es el saldo pendiente de mis clientes?" → mismo embedding, un solo LLM call. La base contable no se toca.</div>
+            </div>
+            <div class="dec-case warn-case">
+              <div class="dec-case-label">TTL crítico</div>
+              <div class="dec-case-text">Respuestas con datos dinámicos (saldos, stock) expiran en 1h o menos. Respuestas estáticas (horarios, políticas) pueden durar 24h o más.</div>
+            </div>
+          </div>
+          <div class="dec-result-meta">
+            <span>Modelo: BGE-M3 en tu VM/Cloud Run</span>
+            <span class="ok">Privacidad: total</span>
+            <span>Ahorro típico: 30–50% de llamadas al LLM</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:0.65rem;flex-wrap:wrap;margin-top:1.25rem">
+        <button class="dec-back" data-back="ds-1">‹ volver</button>
+        <button class="dec-restart">↺ empezar de nuevo</button>
+      </div>
+    </div>
+
+    <!-- RESULTADO: caché semántico API -->
+    <div class="dec-step" id="res-semcache-api">
+      <div class="dec-breadcrumb"><span class="dec-bc-item">Inicio</span><span class="dec-bc-sep">›</span><span class="dec-bc-item">Preguntas</span><span class="dec-bc-sep">›</span><span class="dec-bc-item active">Sin datos privados</span></div>
+      <div class="dec-result">
+        <div class="dec-result-badge api">🌐 API externa viable</div>
+        <div class="dec-result-title">Caché semántico — Voyage AI o BGE-M3</div>
+        <div class="dec-result-body">
+          <p>Mismo patrón — embebés <strong>las preguntas</strong>, no los datos. Como las preguntas no contienen información sensible, podés usar una API externa de embeddings sin riesgo.</p>
+          <p><strong>Voyage AI</strong> es la opción que Anthropic recomienda explícitamente. <strong>BGE-M3 local</strong> sigue siendo válido si ya lo tenés en tu infra — más setup inicial, cero costo por llamada después.</p>
+          <div class="dec-result-flow">
+            <div class="dec-flow-node hi">Pregunta genérica</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node">Voyage AI / BGE-M3</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node">pgvector coseno ≥ 0.92?</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node ok">Respuesta cacheada</div>
+          </div>
+          <div class="dec-result-meta">
+            <span>Modelo: Voyage AI o BGE-M3</span>
+            <span class="warn">Privacidad: verificar por caso</span>
+            <span>Ahorro típico: 30–50% de llamadas al LLM</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:0.65rem;flex-wrap:wrap;margin-top:1.25rem">
+        <button class="dec-back" data-back="ds-1">‹ volver</button>
+        <button class="dec-restart">↺ empezar de nuevo</button>
+      </div>
+    </div>
+
+    <!-- RESULTADO: RAG local -->
+    <div class="dec-step" id="res-rag-local">
+      <div class="dec-breadcrumb"><span class="dec-bc-item">Inicio</span><span class="dec-bc-sep">›</span><span class="dec-bc-item">Datos</span><span class="dec-bc-sep">›</span><span class="dec-bc-item">Texto libre</span><span class="dec-bc-sep">›</span><span class="dec-bc-item active">Privados</span></div>
+      <div class="dec-result">
+        <div class="dec-result-badge local">🏠 Embedding local obligatorio</div>
+        <div class="dec-result-title">RAG sobre datos — BGE-M3 local</div>
+        <div class="dec-result-body">
+          <p>Acá sí embebés <strong>los datos del negocio</strong>: cada observación clínica, nota médica, o campo de texto libre se convierte en un embedding y se indexa en pgvector. Cuando el usuario pregunta, buscás por similitud semántica sobre esos embeddings.</p>
+          <p>Esto permite búsquedas que SQL no puede hacer: "pacientes con signos compatibles con infección" encuentra registros que dicen "leucocitosis", "proceso febril agudo" o "cuadro compatible con bacteremia" — aunque ninguno diga la palabra exacta buscada.</p>
+          <p><strong>BGE-M3 local es obligatorio</strong>: mandar texto clínico a una API externa significa que esos datos del paciente salen de tu infra. Incompatible con cualquier regulación de salud.</p>
+          <div class="dec-result-flow">
+            <div class="dec-flow-node">Texto clínico</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node hi">BGE-M3 local</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node hi">pgvector indexado</div>
+          </div>
+          <div class="dec-flow-label">En consulta:</div>
+          <div class="dec-result-flow" style="margin-top:0.5rem">
+            <div class="dec-flow-node">Pregunta del médico</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node hi">BGE-M3 local</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node">Similitud coseno</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node ok">Top-K registros</div>
+            <div class="dec-flow-arr">→</div>
+            <div class="dec-flow-node">LLM sintetiza</div>
+          </div>
+          <div class="dec-result-cases">
+            <div class="dec-case">
+              <div class="dec-case-label">Caso concreto</div>
+              <div class="dec-case-text">Laboratorio clínico: "¿pacientes con perfil compatible con diabetes no diagnosticada en el último año?" — SQL no puede responder esto, RAG semántico sobre observaciones clínicas sí.</div>
+            </div>
+            <div class="dec-case">
+              <div class="dec-case-label">Complementario con SQL</div>
+              <div class="dec-case-text">SQL para lo estructurado (fecha, código de análisis, valores numéricos fuera de rango). BGE-M3 para lo semántico (observaciones, diagnósticos, notas). Los dos coexisten.</div>
+            </div>
+          </div>
+          <div class="dec-result-meta">
+            <span>Modelo: BGE-M3 en tu VM/Cloud Run</span>
+            <span class="ok">Privacidad: total</span>
+            <span>Capacidad nueva: búsqueda por síntoma/condición en lenguaje natural</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:0.65rem;flex-wrap:wrap;margin-top:1.25rem">
+        <button class="dec-back" data-back="ds-3">‹ volver</button>
+        <button class="dec-restart">↺ empezar de nuevo</button>
+      </div>
+    </div>
+
+    <!-- RESULTADO: RAG API -->
+    <div class="dec-step" id="res-rag-api">
+      <div class="dec-breadcrumb"><span class="dec-bc-item">Inicio</span><span class="dec-bc-sep">›</span><span class="dec-bc-item">Datos</span><span class="dec-bc-sep">›</span><span class="dec-bc-item">Texto libre</span><span class="dec-bc-sep">›</span><span class="dec-bc-item active">Públicos</span></div>
+      <div class="dec-result">
+        <div class="dec-result-badge api">🌐 API externa viable</div>
+        <div class="dec-result-title">RAG sobre datos — Voyage AI o BGE-M3</div>
+        <div class="dec-result-body">
+          <p>Embebés documentación pública, manuales técnicos, FAQs, políticas — contenido que no identifica personas ni revela datos del negocio. Podés usar una API de embeddings externa sin riesgo.</p>
+          <p><strong>Voyage AI</strong> es la recomendación de Anthropic. Tiene modelos especializados en retrieval (<code style="font-family:var(--fm);font-size:0.82rem;color:var(--teal)">voyage-3</code>, <code style="font-family:var(--fm);font-size:0.82rem;color:var(--teal)">voyage-3-lite</code>) con buena performance en español.</p>
+          <div class="dec-result-meta">
+            <span>Modelo: Voyage AI o BGE-M3</span>
+            <span class="warn">Privacidad: solo para datos no sensibles</span>
+            <span>Caso típico: documentación técnica, base de conocimiento pública</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:0.65rem;flex-wrap:wrap;margin-top:1.25rem">
+        <button class="dec-back" data-back="ds-3">‹ volver</button>
+        <button class="dec-restart">↺ empezar de nuevo</button>
+      </div>
+    </div>
+
+    <!-- RESULTADO: SQL -->
+    <div class="dec-step" id="res-sql">
+      <div class="dec-breadcrumb"><span class="dec-bc-item">Inicio</span><span class="dec-bc-sep">›</span><span class="dec-bc-item">Datos</span><span class="dec-bc-sep">›</span><span class="dec-bc-item active">Numérico / estructurado</span></div>
+      <div class="dec-result">
+        <div class="dec-result-badge sql">🗃️ SQL — no uses embeddings sobre estos datos</div>
+        <div class="dec-result-title">SQL exacto — sin capa semántica sobre los datos</div>
+        <div class="dec-result-body">
+          <p>La búsqueda semántica aporta valor cuando hay lenguaje natural que interpretar. Para datos contables, financieros o de inventario — saldos, fechas, montos, códigos — <strong>SQL exacto siempre gana</strong>: más preciso, más rápido, sin ambigüedad.</p>
+          <p>Intentar buscar "pérdidas" semánticamente en una base contable puede asociarlo con "gastos de papelería" o "mermas de inventario". En auditoría esa imprecisión es un problema grave.</p>
+          <div class="dec-result-flow">
+            <div class="dec-flow-node warn">❌ Embedding sobre datos numéricos</div>
+            <div class="dec-flow-arr" style="color:var(--red)">✗</div>
+            <div class="dec-flow-node ok">✓ SQL con GROUP BY, SUM, LIMIT</div>
+          </div>
+          <div class="dec-result-cases">
+            <div class="dec-case">
+              <div class="dec-case-label">Excepción válida</div>
+              <div class="dec-case-text">Si la base tiene campos de texto libre (conceptos de facturas escritos manualmente, notas de gastos), esos campos específicos sí pueden indexarse con BGE-M3. Los campos numéricos siguen con SQL.</div>
+            </div>
+            <div class="dec-case">
+              <div class="dec-case-label">Embeddings sí aplican acá</div>
+              <div class="dec-case-text">Para el caché semántico de las preguntas del usuario — no sobre los datos contables sino sobre lo que Luciana pregunta. Ver rama "Preguntas del usuario" para ese patrón.</div>
+            </div>
+          </div>
+          <div class="dec-result-meta">
+            <span>Sobre los datos: SQL puro</span>
+            <span class="ok">Sobre las preguntas: caché semántico aplica igual</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:0.65rem;flex-wrap:wrap;margin-top:1.25rem">
+        <button class="dec-back" data-back="ds-2">‹ volver</button>
+        <button class="dec-restart">↺ empezar de nuevo</button>
+      </div>
+    </div>
+
+  </div><!-- /dec-tree -->
 </section>
 
 <footer>
   <div style="font-family:var(--fd);font-size:1rem;font-weight:700;color:var(--text);margin-bottom:0.4rem">RAG — Guía Visual Interactiva</div>
-  <div style="color:var(--text-d);margin-bottom:0.65rem">Embeddings · Retrieval · Chunking · Hybrid Search · Reranking · Generación</div>
+  <div style="color:var(--text-d);margin-bottom:0.65rem">Embeddings · Retrieval · Chunking · Hybrid Search · Reranking · Generación · Decisión de arquitectura</div>
   <div style="color:var(--text-d);font-size:0.72rem">From embeddings to grounded generation.</div>
 </footer>
 
 <script>
-// ---- PROGRESS BAR + NAV ACTIVE ----
 const prog = document.getElementById('prog');
 const navLinks = document.querySelectorAll('a.nv');
 window.addEventListener('scroll', () => {
@@ -1246,15 +937,12 @@ const obs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       const id = e.target.id;
-      navLinks.forEach(a => {
-        a.classList.toggle('active', a.getAttribute('href') === '#' + id);
-      });
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
     }
   });
 }, { threshold: 0.3 });
 sections.forEach(s => obs.observe(s));
 
-// ---- PIPELINE ----
 document.querySelectorAll('.pstep').forEach(step => {
   step.querySelector('.shdr').addEventListener('click', () => {
     const wasOn = step.classList.contains('on');
@@ -1263,7 +951,6 @@ document.querySelectorAll('.pstep').forEach(step => {
   });
 });
 
-// ---- EMBEDDINGS ----
 const words = {
   feliz:    { x: 270, y: 60,  group: 'emociones', color: '#DC2626' },
   triste:   { x: 308, y: 82,  group: 'emociones', color: '#DC2626' },
@@ -1294,15 +981,10 @@ const clusters = [
 function renderEmbedding(selected) {
   const svg = document.getElementById('esvg');
   let html = '';
-  // clusters
   clusters.forEach(c => {
     html += `<ellipse cx="${c.cx}" cy="${c.cy}" rx="${c.rx}" ry="${c.ry}" fill="rgba(0,0,0,0.03)" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>`;
     html += `<text x="${c.cx}" y="${c.ly}" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="rgba(0,0,0,0.32)">${c.label}</text>`;
   });
-  // axis labels
-  html += `<text x="580" y="370" text-anchor="end" font-family="DM Mono,monospace" font-size="9" fill="rgba(0,0,0,0.32)">dim 1</text>`;
-  html += `<text x="18" y="20" text-anchor="start" font-family="DM Mono,monospace" font-size="9" fill="rgba(0,0,0,0.32)">dim 2</text>`;
-  // similarity lines
   if (selected) {
     const sw = words[selected];
     Object.entries(sims[selected]).forEach(([w2, sim]) => {
@@ -1314,32 +996,24 @@ function renderEmbedding(selected) {
       html += `<line x1="${sw.x}" y1="${sw.y}" x2="${w2d.x}" y2="${w2d.y}" stroke="${color}" stroke-width="${isClose?1.5:1}" opacity="${opacity}" ${dash}/>`;
     });
   }
-  // dots
   Object.entries(words).forEach(([w, d]) => {
     const isSel = w === selected;
     const r = isSel ? 9 : 7;
     const opacity = (!selected || w === selected || sims[selected]?.[w] >= 0.8) ? 1 : 0.35;
     html += `<circle cx="${d.x}" cy="${d.y}" r="${r}" fill="${d.color}" opacity="${opacity}" style="cursor:pointer" data-w="${w}"/>`;
     html += `<text x="${d.x}" y="${d.y + r + 12}" text-anchor="middle" font-family="DM Mono,monospace" font-size="9.5" fill="rgba(12,27,46,0.75)" data-w="${w}" style="cursor:pointer">${w}</text>`;
-    if (isSel) {
-      html += `<circle cx="${d.x}" cy="${d.y}" r="${r+4}" fill="none" stroke="${d.color}" stroke-width="1.5" opacity="0.5"/>`;
-    }
+    if (isSel) html += `<circle cx="${d.x}" cy="${d.y}" r="${r+4}" fill="none" stroke="${d.color}" stroke-width="1.5" opacity="0.5"/>`;
   });
   svg.innerHTML = html;
-  // click on SVG words/dots
-  svg.querySelectorAll('[data-w]').forEach(el => {
-    el.addEventListener('click', () => selectWord(el.dataset.w));
-  });
-  // info
+  svg.querySelectorAll('[data-w]').forEach(el => el.addEventListener('click', () => selectWord(el.dataset.w)));
   const info = document.getElementById('einfo');
   if (selected) {
     const d = words[selected];
     const topSim = Object.entries(sims[selected]).sort((a,b)=>b[1]-a[1])[0];
     const botSim = Object.entries(sims[selected]).sort((a,b)=>a[1]-b[1])[0];
-    info.innerHTML = `<strong style="color:var(--text)">${selected}</strong> pertenece al grupo <em>${d.group}</em>. &nbsp;— Similitud con <span class="hl">${topSim[0]}</span>: cercanos (${topSim[1]}) &nbsp;— Similitud con <span class="hr">${botSim[0]}</span>: lejanos (${botSim[1]})`;
+    info.innerHTML = `<strong style="color:var(--text)">${selected}</strong> pertenece al grupo <em>${d.group}</em>. Similitud con <span class="hl">${topSim[0]}</span>: cercanos (${topSim[1]}) — Similitud con <span class="hr">${botSim[0]}</span>: lejanos (${botSim[1]})`;
   }
 }
-
 function selectWord(w) {
   document.querySelectorAll('.wbtn').forEach(b => b.classList.toggle('on', b.dataset.w === w));
   renderEmbedding(w);
@@ -1347,7 +1021,6 @@ function selectWord(w) {
 document.querySelectorAll('.wbtn').forEach(b => b.addEventListener('click', () => selectWord(b.dataset.w)));
 renderEmbedding('feliz');
 
-// ---- INDEXACION CHUNKS ----
 const chunkDetails = {
   '001': 'id: "chunk_001" | text: "Las vacaciones anuales son de 15 días hábiles..." | source: política_rrhh_2024.pdf · p.4 | vector: [0.82, 0.31, -0.14, 0.67, ...×1536]',
   '002': 'id: "chunk_002" | text: "El período de prueba dura 3 meses según..." | source: convenio_colectivo_2023.pdf · p.12 | vector: [0.44, 0.79, 0.23, -0.11, ...×1536]',
@@ -1360,43 +1033,31 @@ document.querySelectorAll('.crow').forEach(row => {
     const was = row.classList.contains('on');
     document.querySelectorAll('.crow').forEach(r => r.classList.remove('on'));
     const det = document.getElementById('chunkDetail');
-    if (!was) {
-      row.classList.add('on');
-      det.style.display = 'block';
-      det.textContent = chunkDetails[row.dataset.c];
-    } else {
-      det.style.display = 'none';
-    }
+    if (!was) { row.classList.add('on'); det.style.display = 'block'; det.textContent = chunkDetails[row.dataset.c]; }
+    else det.style.display = 'none';
   });
 });
 
-// ---- RETRIEVAL ----
 const queries = [
-  { label: '"¿Cuántos días de vacaciones tengo?"', rows: [
-    { id:'chunk 001', txt:'"Las vacaciones anuales son de 15 días hábiles pagados por año..."', score:0.97, rank:'top-1' },
-    { id:'chunk 005', txt:'"Los feriados nacionales no descuentan del banco de vacaciones..."', score:0.88, rank:'top-2' },
-    { id:'chunk 004', txt:'"El salario se liquida el último día hábil de cada mes..."', score:0.22, rank:'top-3' },
+  { rows: [
+    { id:'chunk 001', txt:'"Las vacaciones anuales son de 15 días hábiles pagados por año..."', score:0.97, rank:'t1' },
+    { id:'chunk 005', txt:'"Los feriados nacionales no descuentan del banco de vacaciones..."', score:0.88, rank:'t2' },
+    { id:'chunk 004', txt:'"El salario se liquida el último día hábil de cada mes..."', score:0.22, rank:'t3' },
     { id:'chunk 002', txt:'"El período de prueba dura 3 meses según el contrato colectivo..."', score:0.21, rank:'' },
-    { id:'chunk 007', txt:'"Durante el período de prueba no aplican beneficios adicionales..."', score:0.19, rank:'' },
-    { id:'chunk 003', txt:'"Los beneficios de salud incluyen cobertura médica, dental..."', score:0.15, rank:'' },
-    { id:'chunk 006', txt:'"La cobertura de medicamentos aplica con receta médica autorizada..."', score:0.11, rank:'' }
+    { id:'chunk 003', txt:'"Los beneficios de salud incluyen cobertura médica, dental..."', score:0.15, rank:'' }
   ]},
-  { label: '"¿Qué cubre el seguro médico?"', rows: [
-    { id:'chunk 003', txt:'"Los beneficios de salud incluyen cobertura médica, dental y oftalmología..."', score:0.96, rank:'top-1' },
-    { id:'chunk 006', txt:'"La cobertura de medicamentos aplica con receta médica autorizada..."', score:0.89, rank:'top-2' },
-    { id:'chunk 007', txt:'"Durante el período de prueba no aplican beneficios adicionales..."', score:0.17, rank:'top-3' },
-    { id:'chunk 002', txt:'"El período de prueba dura 3 meses según el contrato colectivo..."', score:0.14, rank:'' },
+  { rows: [
+    { id:'chunk 003', txt:'"Los beneficios de salud incluyen cobertura médica, dental y oftalmología..."', score:0.96, rank:'t1' },
+    { id:'chunk 006', txt:'"La cobertura de medicamentos aplica con receta médica autorizada..."', score:0.89, rank:'t2' },
+    { id:'chunk 007', txt:'"Durante el período de prueba no aplican beneficios adicionales..."', score:0.17, rank:'t3' },
     { id:'chunk 001', txt:'"Las vacaciones anuales son de 15 días hábiles pagados por año..."', score:0.12, rank:'' },
-    { id:'chunk 005', txt:'"Los feriados nacionales no descuentan del banco de vacaciones..."', score:0.10, rank:'' },
     { id:'chunk 004', txt:'"El salario se liquida el último día hábil de cada mes..."', score:0.08, rank:'' }
   ]},
-  { label: '"¿Cuánto dura el período de prueba?"', rows: [
-    { id:'chunk 002', txt:'"El período de prueba dura 3 meses según el contrato colectivo..."', score:0.95, rank:'top-1' },
-    { id:'chunk 007', txt:'"Durante el período de prueba no aplican beneficios adicionales..."', score:0.82, rank:'top-2' },
-    { id:'chunk 003', txt:'"Los beneficios de salud incluyen cobertura médica, dental..."', score:0.19, rank:'top-3' },
+  { rows: [
+    { id:'chunk 002', txt:'"El período de prueba dura 3 meses según el contrato colectivo..."', score:0.95, rank:'t1' },
+    { id:'chunk 007', txt:'"Durante el período de prueba no aplican beneficios adicionales..."', score:0.82, rank:'t2' },
+    { id:'chunk 003', txt:'"Los beneficios de salud incluyen cobertura médica, dental..."', score:0.19, rank:'t3' },
     { id:'chunk 001', txt:'"Las vacaciones anuales son de 15 días hábiles pagados por año..."', score:0.18, rank:'' },
-    { id:'chunk 005', txt:'"Los feriados nacionales no descuentan del banco de vacaciones..."', score:0.16, rank:'' },
-    { id:'chunk 006', txt:'"La cobertura de medicamentos aplica con receta médica autorizada..."', score:0.13, rank:'' },
     { id:'chunk 004', txt:'"El salario se liquida el último día hábil de cada mes..."', score:0.11, rank:'' }
   ]}
 ];
@@ -1407,172 +1068,84 @@ function renderRetrieval(qi) {
   const top = document.getElementById('topbox');
   list.innerHTML = q.rows.map(r => `
     <div class="srow ${r.rank}">
-      <span class="sid">${r.id}</span>
-      <span class="stxt">${r.txt}</span>
+      <span class="sid">${r.id}</span><span class="stxt">${r.txt}</span>
       <div class="sbar-w"><div class="sbar-bg"><div class="sbar-f" data-w="${r.score}"></div></div></div>
       <span class="sscr">${r.score}</span>
-      <span class="sbadge">${r.rank.replace('top-','top-')}</span>
-    </div>
-  `).join('');
-  // animate bars
-  requestAnimationFrame(() => {
-    list.querySelectorAll('.sbar-f').forEach(bar => {
-      bar.style.width = '0%';
-      requestAnimationFrame(() => {
-        bar.style.width = (parseFloat(bar.dataset.w) * 100) + '%';
-      });
-    });
-  });
+      <span class="sbadge">${r.rank ? 'top-'+r.rank.replace('t','') : ''}</span>
+    </div>`).join('');
+  requestAnimationFrame(() => { list.querySelectorAll('.sbar-f').forEach(bar => { bar.style.width='0%'; requestAnimationFrame(() => bar.style.width=(parseFloat(bar.dataset.w)*100)+'%'); }); });
   const tops = q.rows.filter(r => r.rank);
-  top.innerHTML = `<div class="topbox-t">Fragmentos recuperados (Top-3):</div>` +
-    tops.map((r,i) => `<div class="topitem"><span>#${i+1}</span> ${r.txt}</div>`).join('');
+  top.innerHTML = `<div class="topbox-t">Fragmentos recuperados (Top-3):</div>` + tops.map((r,i) => `<div class="topitem"><span>#${i+1}</span> ${r.txt}</div>`).join('');
 }
-
 document.querySelectorAll('.qbtn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.qbtn').forEach(b => b.classList.remove('on'));
-    btn.classList.add('on');
-    renderRetrieval(parseInt(btn.dataset.q));
-  });
+  btn.addEventListener('click', () => { document.querySelectorAll('.qbtn').forEach(b => b.classList.remove('on')); btn.classList.add('on'); renderRetrieval(parseInt(btn.dataset.q)); });
 });
 renderRetrieval(0);
 
-// ---- CHUNKING ----
 const chunkStrategies = [
-  {
-    label: 'Tamaño fijo',
-    render: () => `<div class="ctextarea"><span class="ch c1">Las vacaciones anuales son de 15 días hábiles. El empleado debe solicitarlas con</span> <span class="ch c2">al menos 15 días de anticipación. Los días no tomados pueden acumularse hasta</span> <span class="ch c3">el límite de 30 días. El período de prueba dura 3 meses y no acumula vacaciones.</span></div>`,
-    chunks: 3, tokens: '~100', risk: 'alto', riskCls: 'bad',
-    pros: ['Simple de implementar','Predecible y uniforme'],
-    cons: ['Puede cortar oraciones a la mitad','Pierde contexto entre chunks','El límite es arbitrario']
-  },
-  {
-    label: 'Con solapamiento',
-    render: () => `<div class="ctextarea"><span class="ch c1">Las vacaciones anuales son de 15 días hábiles. El empleado debe solicitarlas</span><span class="ch ov"> solicitarlas con al menos 15 días de anticipación. Los días no tomados pueden acumularse</span><span class="ch c3"> acumularse hasta el límite de 30 días. El período de prueba dura 3 meses.</span></div>`,
-    chunks: 3, tokens: '~100', risk: 'bajo', riskCls: 'warn',
-    pros: ['Preserva contexto en los bordes','Ideas que cruzan límites se capturan','Fácil de implementar'],
-    cons: ['Mayor uso de almacenamiento (~20-30% más)','Duplica información entre chunks','Solapamiento óptimo varía por contenido']
-  },
-  {
-    label: 'Por estructura',
-    render: () => `<div class="ctextarea"><span class="ch c1">§ Política de vacaciones — Las vacaciones anuales son de 15 días hábiles. El empleado debe solicitarlas con al menos 15 días de anticipación. Los días no tomados pueden acumularse hasta el límite de 30 días.</span><br><br><span class="ch c2">§ Período de prueba — El período de prueba dura 3 meses según el contrato. Durante este tiempo no aplican los beneficios adicionales.</span></div>`,
-    chunks: 2, tokens: 'variable', risk: 'muy bajo', riskCls: 'good',
-    pros: ['Respeta la lógica del documento','Cada chunk es semánticamente completo','Ideal para wikis y manuales'],
-    cons: ['Depende de buena estructura en el doc','Secciones largas generan chunks enormes','Requiere parser específico por formato']
-  },
-  {
-    label: 'Semántico',
-    render: () => `<div class="ctextarea"><span class="ch c1">"Las vacaciones anuales son de 15 días hábiles. El empleado debe solicitarlas con al menos 15 días de anticipación. Los días no tomados pueden acumularse hasta el límite de 30 días." — tema: <em>días y solicitud de vacaciones</em></span><br><br><span class="ch c2">"El período de prueba dura 3 meses según el contrato. Durante este tiempo no aplican los beneficios adicionales." — tema: <em>período de prueba</em></span></div>`,
-    chunks: 2, tokens: 'variable', risk: 'muy bajo', riskCls: 'good',
-    pros: ['Chunks = unidades de significado real','Máxima precisión en recuperación','Elimina cortes arbitrarios'],
-    cons: ['Computacionalmente costoso','Requiere modelo de embeddings para segmentar','Más complejo de implementar y mantener']
-  }
+  { label:'Tamaño fijo', render:()=>`<div class="ctextarea"><span class="ch c1">Las vacaciones anuales son de 15 días hábiles. El empleado debe solicitarlas con</span> <span class="ch c2">al menos 15 días de anticipación. Los días no tomados pueden acumularse hasta</span> <span class="ch c3">el límite de 30 días. El período de prueba dura 3 meses y no acumula vacaciones.</span></div>`, chunks:3, tokens:'~100', risk:'alto', riskCls:'bad', pros:['Simple de implementar','Predecible y uniforme'], cons:['Puede cortar oraciones a la mitad','Pierde contexto entre chunks'] },
+  { label:'Con solapamiento', render:()=>`<div class="ctextarea"><span class="ch c1">Las vacaciones anuales son de 15 días hábiles. El empleado debe solicitarlas</span><span class="ch ov"> solicitarlas con al menos 15 días de anticipación. Los días no tomados pueden acumularse</span><span class="ch c3"> acumularse hasta el límite de 30 días.</span></div>`, chunks:3, tokens:'~100', risk:'bajo', riskCls:'warn', pros:['Preserva contexto en los bordes','Ideas que cruzan límites se capturan'], cons:['Mayor almacenamiento (~20-30% más)','Duplica información entre chunks'] },
+  { label:'Por estructura', render:()=>`<div class="ctextarea"><span class="ch c1">§ Política de vacaciones — Las vacaciones anuales son de 15 días hábiles. El empleado debe solicitarlas con al menos 15 días de anticipación.</span><br><br><span class="ch c2">§ Período de prueba — El período de prueba dura 3 meses según el contrato.</span></div>`, chunks:2, tokens:'variable', risk:'muy bajo', riskCls:'good', pros:['Respeta la lógica del documento','Cada chunk es semánticamente completo'], cons:['Depende de buena estructura en el doc','Requiere parser específico por formato'] },
+  { label:'Semántico', render:()=>`<div class="ctextarea"><span class="ch c1">"Las vacaciones anuales son de 15 días hábiles..." — tema: <em>días y solicitud de vacaciones</em></span><br><br><span class="ch c2">"El período de prueba dura 3 meses..." — tema: <em>período de prueba</em></span></div>`, chunks:2, tokens:'variable', risk:'muy bajo', riskCls:'good', pros:['Chunks = unidades de significado real','Máxima precisión en recuperación'], cons:['Computacionalmente costoso','Más complejo de implementar'] }
 ];
-
 function renderChunk(si) {
   const s = chunkStrategies[si];
-  const el = document.getElementById('cdisplay');
-  el.innerHTML = s.render() +
-    `<div class="cstats">
-      <div class="cstat"><div class="cstat-l">chunks generados</div><div class="cstat-v">${s.chunks}</div></div>
-      <div class="cstat"><div class="cstat-l">tokens por chunk</div><div class="cstat-v">${s.tokens}</div></div>
-      <div class="cstat"><div class="cstat-l">riesgo de corte</div><div class="cstat-v ${s.riskCls}">${s.risk}</div></div>
-    </div>
-    <div class="cpc">
-      <div class="cpros"><div class="cpc-t">Ventajas</div>${s.pros.map(p=>`<div class="cpr">${p}</div>`).join('')}</div>
-      <div class="ccons"><div class="cpc-t">Limitaciones</div>${s.cons.map(c=>`<div class="ccn">${c}</div>`).join('')}</div>
-    </div>`;
+  document.getElementById('cdisplay').innerHTML = s.render() +
+    `<div class="cstats"><div class="cstat"><div class="cstat-l">chunks</div><div class="cstat-v">${s.chunks}</div></div><div class="cstat"><div class="cstat-l">tokens/chunk</div><div class="cstat-v">${s.tokens}</div></div><div class="cstat"><div class="cstat-l">riesgo corte</div><div class="cstat-v ${s.riskCls}">${s.risk}</div></div></div>
+    <div class="cpc"><div class="cpros"><div class="cpc-t">Ventajas</div>${s.pros.map(p=>`<div class="cpr">${p}</div>`).join('')}</div><div class="ccons"><div class="cpc-t">Limitaciones</div>${s.cons.map(c=>`<div class="ccn">${c}</div>`).join('')}</div></div>`;
 }
 document.querySelectorAll('.ctab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.ctab').forEach(t => t.classList.remove('on'));
-    tab.classList.add('on');
-    renderChunk(parseInt(tab.dataset.s));
-  });
+  tab.addEventListener('click', () => { document.querySelectorAll('.ctab').forEach(t => t.classList.remove('on')); tab.classList.add('on'); renderChunk(parseInt(tab.dataset.s)); });
 });
 renderChunk(0);
 
-// ---- METADATOS ACCORDION ----
-document.querySelectorAll('.mghdr').forEach(hdr => {
-  hdr.addEventListener('click', () => {
-    hdr.closest('.mgrp').classList.toggle('open');
-  });
-});
+document.querySelectorAll('.mghdr').forEach(hdr => hdr.addEventListener('click', () => hdr.closest('.mgrp').classList.toggle('open')));
 
-// ---- PROMPT BLOCKS ----
-const TOTAL_TOKENS = 625;
 const TOKENS_PER = { 'pb-sys':85, 'pb-ctx':480, 'pb-usr':18, 'pb-cls':42 };
-
 function updateTokens() {
   let total = 0;
-  document.querySelectorAll('.pblock').forEach(b => {
-    const cls = Array.from(b.classList).find(c => TOKENS_PER[c]);
-    if (cls && !b.classList.contains('off')) total += TOKENS_PER[cls];
-  });
+  document.querySelectorAll('.pblock').forEach(b => { const cls = Array.from(b.classList).find(c => TOKENS_PER[c]); if (cls && !b.classList.contains('off')) total += TOKENS_PER[cls]; });
   document.getElementById('toknum').textContent = total;
   document.getElementById('tokfill').style.width = (total / 1000 * 100) + '%';
 }
-
 document.querySelectorAll('.pblock').forEach(block => {
-  const hdr = block.querySelector('.pbhdr');
-  hdr.addEventListener('click', (e) => {
-    if (e.target.classList.contains('pbtog')) {
-      block.classList.toggle('off');
-      updateTokens();
-    } else {
-      block.classList.toggle('open');
-    }
+  block.querySelector('.pbhdr').addEventListener('click', (e) => {
+    if (e.target.classList.contains('pbtog')) { block.classList.toggle('off'); updateTokens(); }
+    else block.classList.toggle('open');
   });
 });
 
-
-
-// ---- COSENO TABS ----
 document.querySelectorAll('.cos-tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.cos-tab').forEach(t => t.classList.remove('on'));
-    document.querySelectorAll('.cos-panel').forEach(p => p.classList.remove('on'));
-    tab.classList.add('on');
-    document.getElementById('cpanel-' + tab.dataset.ct).classList.add('on');
-  });
+  tab.addEventListener('click', () => { document.querySelectorAll('.cos-tab').forEach(t => t.classList.remove('on')); document.querySelectorAll('.cos-panel').forEach(p => p.classList.remove('on')); tab.classList.add('on'); document.getElementById('cpanel-' + tab.dataset.ct).classList.add('on'); });
 });
 
-// ---- COSENO STEP REVEAL ----
 const stepState = { num: 0, words: 0 };
 const stepMax = { num: 3, words: 2 };
-
 function revealNext(group) {
   const steps = document.querySelectorAll('#steps-' + group + ' .cos-step');
   const next = stepState[group] + 1;
-  if (next < steps.length) {
-    steps[next].classList.add('revealed');
-    stepState[group] = next;
-  }
+  if (next < steps.length) { steps[next].classList.add('revealed'); stepState[group] = next; }
   const btn = document.getElementById('btn-' + group);
-  if (stepState[group] >= stepMax[group]) {
-    btn.textContent = '✓ Completado';
-    btn.disabled = true;
-  }
+  if (stepState[group] >= stepMax[group]) { btn.textContent = '✓ Completado'; btn.disabled = true; }
 }
 
-// ---- RAG MODERNO CARDS ----
 document.querySelectorAll('.mcard').forEach(card => {
-  card.querySelector('.mcard-hdr').addEventListener('click', () => {
-    const wasOn = card.classList.contains('on');
-    document.querySelectorAll('.mcard').forEach(c => c.classList.remove('on'));
-    if (!wasOn) card.classList.add('on');
-  });
+  card.querySelector('.mcard-hdr').addEventListener('click', () => { const wasOn = card.classList.contains('on'); document.querySelectorAll('.mcard').forEach(c => c.classList.remove('on')); if (!wasOn) card.classList.add('on'); });
 });
 
-// ---- LLM TABS ----
 document.querySelectorAll('.ltab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.ltab').forEach(t => t.classList.remove('on'));
-    document.querySelectorAll('.lpanel').forEach(p => p.classList.remove('on'));
-    tab.classList.add('on');
-    document.getElementById('ltab-' + tab.dataset.t).classList.add('on');
-  });
+  tab.addEventListener('click', () => { document.querySelectorAll('.ltab').forEach(t => t.classList.remove('on')); document.querySelectorAll('.lpanel').forEach(p => p.classList.remove('on')); tab.classList.add('on'); document.getElementById('ltab-' + tab.dataset.t).classList.add('on'); });
 });
+
+// ---- DECISION TREE §12 ----
+function showDecStep(id) {
+  document.querySelectorAll('.dec-step').forEach(s => s.classList.remove('active'));
+  const target = document.getElementById(id);
+  if (target) target.classList.add('active');
+}
+document.querySelectorAll('.dec-choice').forEach(btn => btn.addEventListener('click', () => showDecStep(btn.dataset.next)));
+document.querySelectorAll('.dec-back').forEach(btn => btn.addEventListener('click', () => showDecStep(btn.dataset.back)));
+document.querySelectorAll('.dec-restart').forEach(btn => btn.addEventListener('click', () => showDecStep('ds-0')));
 </script>
 </body>
 </html>
